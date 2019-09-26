@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title style="text-align:center; position: relative">
+            <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+            重置密码
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class = "user-page">
+        <div class="formDiv">
+            <div class="inputDiv" style="border-top: 1px solid rgb( 200,199,204)">
+                <div class="icoDiv" style="background-image: url('../../assets/imgs/ic_phone.svg')"></div>
+                <input type="text" class="inputStyle phoneNumber" placeholder="请输入手机号">
+                <div class="buttonBorder"></div>
+            </div>
+            <div class="inputDiv" style="border-bottom: 1px solid rgb( 200,199,204)">
+                <div class="icoDiv" style="background-image: url('../../assets/imgs/ic_done.svg')"></div>
+                <input type="text" class="inputStyle" placeholder="请输入验证码">
+                <button class="hqyzm">获取验证码</button>
+            </div>
+
+            <div class="buttonDiv">
+                <button class="button1" routerLink="">确认</button>
+            </div>
+        </div>
+    </div>
+</ion-content>

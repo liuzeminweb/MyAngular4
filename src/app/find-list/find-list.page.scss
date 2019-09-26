@@ -1,0 +1,347 @@
+
+*{
+  font-style: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  height: 5.5rem;
+  display: block;
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  width: 100%;
+  z-index: 10;
+}
+.bgDiv{
+  background: #f2f2f2;
+}
+.scrollDiv{
+  overflow-y: auto;
+}
+.findListNav{
+  height: 5.5rem;
+  width: 100%;
+  border-bottom: 2px solid #e2e2e2;
+  box-shadow: 3px 1px #eee;
+}
+.findListNav ul{
+  height: 5rem;
+  margin: 0 auto;
+  width: 320px;
+}
+.findListNav ul li{
+  height: 60px;
+  width: 40px;
+  float: left;
+  margin: 0 8px;
+  cursor: pointer;
+}
+.findListNav ul .zrButton{
+  position: relative;
+  height: 70px;
+  top: 10px;
+  width: 70px;
+}
+.findListNav ul li img{
+  height: 100%;
+  width: 100%;
+}
+/*@media (min-width: 400px) and (max-width: 780px) {
+  html,body{
+    font-size: 14px;
+  }
+}
+@media(max-width: 400px) {
+  html,body{
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  html,body{
+    font-size: 16px;
+  }
+}*/
+
+.itemMargin{
+  margin: 0 0 12px;
+ /* height: calc(100% - 30px);;*/
+  padding: 0 5%;
+  height: 620px;
+}
+.itemDDiv{
+/*  width: 100%;
+  height:100%;
+  padding: 10px;
+  border-radius: 14px;
+  position: relative;
+  border: 1px solid #e7e7e7;
+  background: #fff;*/
+}
+.findDiv{
+  width: 100%;
+  min-height: 560px;
+  height: calc(100%);;
+}
+.clear{
+  clear: both;
+}
+/*@media (max-width: 400px) {
+  .findListNav ul{
+    height: 5rem;
+    margin: 0 auto;
+    width: 25rem;
+  }
+  .findListNav ul li{
+     height: 5rem;
+     width: 4rem;
+     float: left;
+     margin: 0 .3rem;
+     cursor: pointer;
+   }
+  .findListNav ul .zrButton{
+    position: relative;
+    height: 7rem;
+    width: 6rem;
+  }
+}*/
+.modal-login{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba( 0,0,0,0.5);
+  z-index: 100;
+  display: none;
+  .modelDiv{
+    width: 80%;
+    padding: 2rem;
+    margin: 15% auto;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .inputStyle {
+    width: 100%;
+    height: 2.8rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 0.6rem;
+    padding: 0 1rem;
+    border:1px solid rgb( 114,102,206);
+  }
+  .button1{
+    width: 100%;
+    height: 3.1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1.6rem;
+    padding: 0 1rem;
+    background: #7266ce;
+    color: #fff;
+    /*  letter-spacing: 0.25rem;
+      font-weight: 600;*/
+    font-size: 1.2rem;
+  }
+  .headBt{
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .bodyText{
+    margin-bottom: 5rem;
+  }
+  .inputDiv h3{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.modal-kefu{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba( 0,0,0,0.5);
+  z-index: 100;
+  display: none;
+  .modelDiv{
+    width: 80%;
+    padding: 2rem 3rem 4rem;
+    margin: 15% auto;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .button1{
+    width: 100%;
+    height: 3.1rem;
+    line-height: 3.1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1.6rem;
+    padding: 0 1rem;
+    background: #7266ce;
+    color: #fff;
+    /*  letter-spacing: 0.25rem;
+      font-weight: 600;*/
+    font-size: 1.2rem;
+  }
+  .headBt{
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .bodyText{
+    margin-bottom: .5rem;
+  }
+  .imgDiv{
+     text-align: center;
+     padding: 3rem 0;
+
+   }
+  .imgDiv img{
+    width: auto;
+    height: 10rem;
+  }
+  .iconWX{
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height:2rem;
+    top: .6rem;
+    background: url("../../assets/imgs/weChatIcon@3x.png") no-repeat center center;
+    background-size: contain;
+  }
+}
+.cardDIV{
+  position: absolute;
+  top: 125px;
+  height: 30rem;
+  width: 80%;
+  left: 0;
+  right:0;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: .4rem;
+  z-index: 99;
+}
+/*.cardDIV h3{
+  text-align: center;
+  margin-top: 2rem;
+}*/
+.imgClass{
+  width: 100%;
+  height: calc(100%);
+  margin: 1rem auto;
+}
+.imgClass img{
+  width: 100%;
+  height: 100%;
+}
+.btnClass{
+  height:5rem;
+  border-top: 1px solid #f2f2f2;
+  position: absolute;
+  bottom: .2rem;
+  width: 100%;
+
+}
+.lookmore{
+  background: #fff;
+  padding: 0;
+  width: 50%;
+  height:3.95rem;
+  border:0;
+  float: left;
+  font-size: 14pt;
+  border-right: 1px solid #f2f2f2;
+  color: #b1bacc;
+  font-weight: 600;
+}
+.sure{
+  background: #fff;
+  padding: 0;
+  width: 49%;
+  border:0;
+  float: right;
+  font-size: 14pt;
+  height:3.95rem;
+  color: #ef5069;
+  font-weight: 600;
+}
+.cardERRDiv{
+  height: 25rem;
+}
+.imgMDiv{
+  margin: 20pt auto;
+  width: 20rem;
+  height: 20rem;
+}
+.imgMDiv img{
+  display: block;
+  margin: 0 auto;
+}
+.wxTj{
+  color: #ef5069;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 14pt;
+  background: #fff;
+  font-weight: 600;
+}
+.cardDIV .h3{
+  margin: 30pt;
+  font-size: 16pt;
+  font-weight: 600;
+  font-family: PingFangSC-Medium;
+  text-align: center;
+}
+.cardDIV .textP{
+  padding: 0 26pt;
+  font-size: 12pt;
+  line-height: 13.5pt;
+  font-family: PingFangSC-Medium;
+  color: rgb( 179 ,179 ,179);
+  text-align: center;
+}
+.cardBDiv .xsj{
+  right:1rem;
+}
+.cardMDiv .xsj{
+  left:1rem;
+}
+.cardFDiv .xsj{
+  left: calc( 50% - 2rem);
+}
+.xsj{
+  display: none;
+  position: absolute;
+  bottom:-3rem ;
+  width: 0;
+  height: 0;
+  border-width: 2rem;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+.bgModelDiv{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  //background: #787878;
+  background: #000;
+  opacity: 0.5;
+  z-index: 98;
+}

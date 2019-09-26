@@ -1,0 +1,59 @@
+<!--
+
+<ion-content  class= "lm-baseinfo-settings-page">
+    <h2 class="titleh2">个人信息</h2>
+    <div class="divKuang infoList">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">昵称</div>
+            <div class="itemRight textRight">Andy</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">生日</div>
+            <div class="itemRight textRight">1990 / 07 / 10</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">身高</div>
+            <div class="itemRight textRight">181cm</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">体重</div>
+            <div class="itemRight textRight">80kg</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">职业</div>
+            <div class="itemRight textRight">互联网</div>
+        </div>
+    </div>
+    <h2 class="titleh2" style="padding-top: 20pt">地区设置</h2>
+    <div class="divKuang diquK" style="margin-bottom: 0">
+
+        <app-mychipTow  text="悉尼"  [isOn]="!isOn" isClass = "true"></app-mychipTow>
+        <app-mychipTow  text="北京"  [isOn]="!isOn" isClass = "true"></app-mychipTow>
+        <ion-chip class="bgColor1">
+            <ion-label ></ion-label>
+        </ion-chip>
+        <div class="addMyChip">+</div>
+        <div class="clear"></div>
+    </div>
+    <div class="sjjjText">
+        针对不同会员等级可以添加或修改地区增加被其他会员看到/翻牌的机会，初级会员不可以更改地区
+    </div>
+    <h2 class="titleh2" style="margin-top: 20pt">我的标签</h2>
+    <div class="divKuang myChipK" >
+        <app-mychipTow *ngFor="let item of  mychipList" [text]="item.text"  [isOn]="item.isOn" isClass = "true" [isStyle]="myStyleS" ></app-mychipTow>
+        <div class="clear"></div>
+    </div>
+    <h2 class="titleh2" style="padding-top: 20pt">我的兴趣</h2>
+    <div class="divKuang myChipK" >
+        <app-mychipTow *ngFor="let item of  mychipList2" [text]="item.text"  [isOn]="item.isOn" isClass = "true" [isStyle]="myStyleS" ></app-mychipTow>
+        <div class="clear"></div>
+    </div>
+    <div class="buttonSure">
+        <button class="sureButton">确认修改</button>
+    </div>
+</ion-content>
+-->

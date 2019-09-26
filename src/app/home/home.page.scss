@@ -1,0 +1,320 @@
+.home-head{
+  top: 0;
+  width: 100%;
+  z-index: 10;
+ // height: 5rem;
+}
+.head-toorbar{
+ // height: 5rem;
+}
+.logoImg{
+  max-height: 36px;
+}
+.lm-home-page {
+  background: url("../../assets/imgs/homeBanner.png") no-repeat  top right;
+  background-size: 100% 100%;
+  position: relative;
+  padding-bottom: 5rem;
+    .bannerDiv{
+      text-align: center;
+      padding: 1rem 0;
+    }
+  .bannerDiv h2{
+      font-size: 26pt;
+      margin: 10pt auto 25pt;
+      font-weight: 300;
+      line-height: 3rem;
+      text-align: center;
+      font-family: WenYue-HouXianDaiTi-NC-W2-75;
+    }
+  .bannerDiv p{
+    font-size: 21pt;
+    text-align: left;
+    padding: 36pt 14.7% 0 7.5%;
+    font-weight: 300;
+    line-height: 3rem;
+    letter-spacing: 1.67pt;
+    text-align: left;
+    font-family: WenYue-HouXianDaiTi-NC-W2-75;
+
+  }
+    .bannerImg{
+      height: 120pt;
+    }
+  .bgDiv2{
+    width: 70pt;
+    height: 120pt;
+    background: url("../../assets/imgs/homeBnner01.png") no-repeat  top right;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+  }
+  .JD3b{
+    font-size: 16pt;
+    padding: 0 7.5%;
+    font-weight: 700;
+    font-family: PingFangSC-Medium;
+    letter-spacing: 1.52pt;
+  }
+    .span {
+        bottom:15rem;
+        padding: 0 7.5% 2rem;
+        width: 100%;
+      h4{
+        font-family: PingFangSC-Light;
+        font-size: 16pt;
+        letter-spacing: 1.52pt;
+      }
+      .buttonDiv{
+        padding: 20pt 8% 0;
+        .button{
+            font-family: PingFangSC-Light;
+            letter-spacing: 2.0pt;
+            width: 100%;
+            height: 30pt;
+            background: rgba( 252,181,193,0);
+            border: 1px solid rgb(114,102,206);
+            border-radius: 2.5pt;
+            margin-bottom:2rem;
+            font-size: 12pt;
+            color: rgb( 114,102,206);
+        }
+        .button1{
+          width: 44%;
+          height: 30pt;
+          background: rgba( 252,181,193,0);
+          border: 1px solid rgb(114,102,206);
+          border-radius: 2.5pt;
+          margin-right: 1rem;
+          margin-bottom:1rem;
+          font-size: 12pt;
+          letter-spacing: 2.0pt;
+          color: rgb( 114,102,206);
+        }
+        .button2{
+          width: 44%;
+          height: 30pt;
+          background: rgba( 252,181,193,0);
+          border: 1px solid rgb(114,102,206);
+          border-radius: 2.5pt;
+          margin-bottom:1rem;
+          font-size: 12pt;
+          letter-spacing: 2.0pt;
+          color: rgb( 114,102,206);
+        }
+        .button:hover{
+           background: rgba( 114,102,206,1);
+           color: #fff;
+         }
+        .button1:hover{
+          background: rgba( 114,102,206,1);
+          color: #fff;
+        }
+        .button2:hover{
+          background: rgba( 114,102,206,1);
+          color: #fff;
+        }
+      }
+      .buttonDiv2{
+        padding: 20pt 0 0;
+      }
+    }
+}
+.datingDiv{
+  //padding: 3rem;
+  text-align: center;
+}
+.datingDiv .liDiv{
+  padding: 3rem;
+}
+.datingDiv li{
+  position: relative;
+}
+
+.datingDiv ul li img{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.datingDiv li .backgroundDiv{
+  position: absolute;
+  top:50%;
+}
+.datingDiv li .backgroundDiv img{
+  width: 100%;
+}
+.datingDiv ul li .liTitle{
+  margin: 2rem auto 1rem;
+  font-size: 12pt;
+  letter-spacing: 0.8pt;
+  line-height: 16pt;
+  color: rgb(32,32,32);
+  font-family: WenYue-HouXianDaiTi-NC-W2-75;
+}
+.datingDiv ul li .liP{
+  font-size: 10pt;
+  letter-spacing: 0.9pt;
+  line-height: 15pt;
+  font-family: PingFangSC-Regular;
+  //font-weight: 700;
+}
+.homeBnner02{
+  height: 3rem;
+  width: 100%;
+  background: url("../../assets/imgs/homeBnner02.png") repeat  top right;
+  background-size: 100% 100%;
+}
+.content-div{
+  padding: 0 8.3% 3rem;
+  h2{
+    font-family: PingFangSC-Medium;
+    font-size: 16pt;
+    //font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .message{
+    font-family: PingFangSC-Regular;
+    font-size: 11pt;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1pt;
+  }
+  .video_swiper{
+     height: 100pt;
+    position: relative;
+    overflow: hidden;
+   }
+  .video_swiper ul{
+    width: 720pt;
+    height: 100pt;
+    position: absolute;
+    left: 0;
+  }
+  .video_swiper ul li{
+    float: left;
+    height: 100pt;
+    width: 150pt;
+    margin: 0 15pt;
+    }
+  .video_swiper ul li img {
+     height: 80pt;
+     width: 100%;
+   }
+  .video_swiper ul li p {
+    text-align: center;
+    margin-top: 4pt;
+    letter-spacing: 0.6pt;
+    font-size: 9pt;
+  }
+
+  .sidles{
+    min-height: 10rem;
+  }
+}
+.vedio_swiper {
+
+  .toolbar-background {
+    background: #fff;
+    border-color: transparent;
+  }
+  .slide-zoom {
+    height: 100%;
+  }
+  .slide-title {
+    margin-top: 2.8rem;
+  }
+
+  .slide-image {
+    max-height: 50%;
+    max-width: 60%;
+    margin: 18px 0;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #60646B;
+
+    b {
+      color: #000000;
+    }
+  }
+}
+.mtImg{
+  text-align: center;
+}
+.mtImg ul li{
+  /* height: 8rem;*/
+   margin-bottom: 4rem;
+ }
+.mtImg ul li img{
+  height: 70pt;
+  width: auto;
+}
+.btnLink{
+  height: 28pt;
+  margin-bottom: 2rem;
+  border-radius: 2.5pt;
+  background: rgb( 114,102,206);
+  color: #fff;
+  font-size: 12.5pt;
+  font-weight: 100;
+  letter-spacing: 2.5pt;
+  width: 80%;
+}
+.social_media ul{
+  display: inline-block;
+}
+.social_media ul li {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+  margin: 1rem;
+  }
+.social_media ul li a{
+  float: left;
+  width: 3rem;
+  height: 3rem;
+}
+.social_media ul li a img{
+  width: 100%;
+  height: 100%;
+}
+.bottom-div{
+  margin-top: 15pt;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: PingFangSC-Light;
+}
+.clear{
+  clear: both;
+}
+.bannerVideoDiv{
+  position: relative;
+  padding: 0 10pt;
+}
+.BnnerleftButton{
+  background: url("../../assets/imgs/ic_left.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left:-10pt;
+  z-index: 100;
+  top:40%;
+  font-size: 20pt;
+}
+.BnnerrightButton{
+  background: url("../../assets/imgs/ic_right.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right:-20px;
+  z-index: 100;
+  top:40%;
+  font-size: 20pt;
+}

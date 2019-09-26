@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="44px" viewBox="0 0 50 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_camera</title>
+    <desc>Created with Sketch.</desc>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lovemaker.io-2.5-Settings-photo" transform="translate(-283.000000, -404.000000)" stroke="#FFD3DA">
+            <g id="Profile-Pic-Editing" transform="translate(13.000000, 250.000000)">
+                <g id="Profile-pic-3" transform="translate(240.000000, 120.000000)">
+                    <g id="ic_camera" transform="translate(26.000000, 26.000000)">
+                        <g id="camera">
+                            <g transform="translate(4.833333, 9.666667)" stroke-width="1.5">
+                                <rect id="Rectangle-5" stroke-linecap="round" stroke-linejoin="round" x="0" y="7.25" width="48.3333333" height="33.8333333"></rect>
+                                <circle id="Oval" cx="31.4166667" cy="24.1666667" r="7.25"></circle>
+                                <rect id="Rectangle" stroke-linecap="round" stroke-linejoin="round" x="4.83333333" y="0" width="14.5" height="7.25"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

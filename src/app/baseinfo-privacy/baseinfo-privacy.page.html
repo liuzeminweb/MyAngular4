@@ -1,0 +1,47 @@
+
+<ion-content  class= "lm-baseinfo-settings-page">
+    <h2 class="titleh2">账户信息</h2>
+    <div class="divKuang infoList">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">邮箱</div>
+            <div class="itemRight textRight">andy.wang@gmail.com</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">手机</div>
+            <div class="itemRight textRight">+1 647-582-0000<button class="hqyzm">未验证</button></div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">微信号</div>
+            <div class="itemRight textRight">35798007</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">修改新密码</div>
+            <div class="itemRight textRight"></div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">确认新密码</div>
+            <div class="itemRight textRight"></div>
+        </div>
+    </div>
+    <div class="divKuang ycDivK" style="margin-bottom: 0">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">隐藏我的资料卡</div>
+            <div class="itemRight textRight ycRight">
+                <div class="divPosition">
+                        <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+                    <div  class="divPositionInput" (click)="showModel()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sjjjText">
+        隐藏资料卡后其他会员将无法看到你的资料卡 你将无法进行被动翻牌
+    </div>
+    <div class="buttonSure">
+        <button class="sureButton" (click)="SureClick()" >确认修改</button>
+    </div>
+</ion-content>

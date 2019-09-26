@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <!--<ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>-->
+    <ion-title style=text-align:center>  <div class="backButton"  routerLink="/usersetting"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>个人资料</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+<ion-tabs tabbarPlacement="top" style="    display: block;position: initial;height: 50px;">
+    <ion-tab label="照片" icon="" href="baseinfoSetting/tab1">
+        < <ion-router-outlet stack name="photo"></ion-router-outlet>
+    </ion-tab>
+    <ion-tab label="隐私" icon="" href="baseinfoSetting/tab2">
+        <ion-router-outlet stack name="privacy"></ion-router-outlet>
+    </ion-tab>
+    <ion-tab label="资料" icon="" href="baseinfoSetting/tab3">
+        <ion-router-outlet stack name="Info"></ion-router-outlet>
+    </ion-tab>
+</ion-tabs>
+<ion-content>
+    <ion-router-outlet></ion-router-outlet>
+</ion-content>
+<div *ngIf="returnIofo( )">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardERRDiv" >
+        <h3 class="h3">您的手机号尚未验证！</h3>
+        <p class="textP">您的手机尚未进行验证，请先验证您的手机号，再修改您的账户信息。</p>
+        <div class="btnClass">
+            <button class="lookmore"  (click)="showPhoneErrModel($event)">暂不验证</button>
+            <button class="sure"  (click)="showPhoneErrModel($event)" routerLink="/phoneYz">验证手机</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="returnIofoYc( )">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardERRDiv" >
+        <h3 class="h3">隐藏资料卡</h3>
+        <p class="textP">隐藏资料卡后其他会员将无法看到你的资料卡，必须通过客服人工验证完成操作。</p>
+        <div class="btnClass">
+            <button class="lookmore"  (click)="showErrModel($event)">暂不考虑</button>
+            <button class="sure"  (click)="showKefuuModel($event)">联系客服</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="showKefu">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV " >
+        <div class="imgMDiv">
+            <img src="../../assets/imgs/MaleQR.svg" alt="">
+        </div>
+        <div class="btnClass">
+            <button class="wxTj"  (click)="showKefuuModel($event)">添加客服微信</button>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="27px" viewBox="0 0 313 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Progress Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="1.13574783%" x2="50%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#9D91FF" offset="0%"></stop>
+            <stop stop-color="#7266CE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Form-Signup-Page-Step-1" transform="translate(-31.000000, -520.000000)">
+            <g id="Progress-Line" transform="translate(31.000000, 520.000000)">
+                <path d="M22.5,13.5 L298.5,13.5" stroke="#C5BDFF" stroke-width="10" stroke-linecap="square"></path>
+                <g id="Progress-Botton">
+                    <circle id="Oval-2" fill="url(#linearGradient-1)" cx="13.5" cy="13.5" r="13.5"></circle>
+                    <path d="M13.4893438,10.5536231 C12.8169688,9.64566154 11.8957188,9 10.75,9 C9.1364375,9 8,10.4806193 8,12.0955069 C8,12.9616472 8.33240625,13.5852975 8.6964375,14.1715289 L12.9702813,19.6398419 C13.4498125,20.1200527 13.5405625,20.1200527 14.0200938,19.6398419 L18.3035625,14.1715289 C18.731875,13.5852975 19,12.9616472 19,12.0955069 C19,10.4806193 17.8635625,9 16.25,9 C15.1042812,9 14.1813125,9.6757435 13.4893438,10.5536231 Z" id="Fill-72" fill="#FFFFFE"></path>
+                </g>
+                <g id="Progress-Botton" transform="translate(143.000000, 0.000000)" fill="#C5BDFF">
+                    <circle id="Oval-2" cx="13.5" cy="13.5" r="13.5"></circle>
+                </g>
+                <g id="Progress-Botton" transform="translate(286.000000, 0.000000)" fill="#C5BDFF">
+                    <circle id="Oval-2" cx="13.5" cy="13.5" r="13.5"></circle>
+                </g>
+                <circle id="Oval-3" stroke-opacity="0.8" stroke="#FFFFFF" stroke-width="2" cx="156.5" cy="13.5" r="5.5"></circle>
+                <circle id="Oval-3-Copy" stroke-opacity="0.8" stroke="#FFFFFF" stroke-width="2" cx="299.5" cy="13.5" r="5.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

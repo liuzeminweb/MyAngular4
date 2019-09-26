@@ -1,0 +1,84 @@
+
+<ion-content class= "lm-baseinfo-settings-page">
+    <h2 class="titleh2">资料卡照片</h2>
+    <div class="divKuang">
+        <div *ngIf="dadShow" class="jq22 dad-active dad-container">
+            <div class="item item1" [ngClass]="{'example': show1}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc1)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show1" class="addDiv">
+                    <span class="addItem"></span>
+                    <input id="uploadImg" (change)="preImg($event,'1')" type="file" accept="image/*;capture=camera" class="js_upFile cover1 fileItem" />
+                </div>
+                <div *ngIf="!show1" class="delDiv" (click)="delThisImg($event,'1');$event.stopPropagation();" >
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item  " [ngClass]="{'example': show2}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc2)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show2" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera" multiple (change)="preImg($event,'2');" />
+                </div>
+                <div *ngIf="!show2" class="delDiv" (click)="delThisImg($event,'2');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item " [ngClass]="{'example': show3}" >
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc3)" alt=""/>
+                <div class="span">	</div>
+                <div  *ngIf="show3" class="addDiv" >
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera"  multiple id="imgOne1" (change)="preImg($event,'3');"  />
+                </div>
+                <div *ngIf="!show3" class="delDiv"(click)="delThisImg($event,'3');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item  " [ngClass]="{'example': show4}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc4)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show4" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera" multiple (change)="preImg($event,'4');"  />
+                </div>
+                <div *ngIf="!show4" class="delDiv" (click)="delThisImg($event,'4');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item  " [ngClass]="{'example': show5}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc5)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show5" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera"  multiple  (change)="preImg($event,'5');"  />
+                </div>
+                <div *ngIf="!show5" class="delDiv" (click)="delThisImg($event,'5');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item " [ngClass]="{'example': show6}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc6)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show6" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera"  multiple  (change)="preImg($event,'6');"  />
+                </div>
+                <div *ngIf="!show6" class="delDiv" (click)="delThisImg($event,'6');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="fontText">
+            <div class="leftText">可上传六张照片到资料卡</div>
+            <div class="rightText">拖拽可改变显示顺序</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="buttonSure">
+        <button class="sureButton" (click)="SureClick()" >确认修改</button>
+    </div>
+</ion-content>

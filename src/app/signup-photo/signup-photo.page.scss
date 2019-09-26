@@ -1,0 +1,343 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+  top: 5pt;
+}
+/*************** style.css *****************/
+
+.banner {
+  width: 100%;
+  position: relative;
+  padding: 17pt 5.1% 5rem;
+  background: url("../../assets/imgs/homeBanner.png") no-repeat  top right;
+  text-align: center;
+  min-height: 100%;
+  background-size: 100% 98%;
+
+}
+.header_style {
+  max-width: 31.25rem;
+  min-width: 31.25rem;
+  position: absolute;
+  z-index: 1;
+}
+.WenYue {
+  font-family: WenYue-HouXianDaiTi;
+  font-size: 25pt;
+  color: #000000;
+  letter-spacing: 1px;
+  margin: 1rem 0 1rem;
+  text-align: center;
+}
+.imgButton{
+  width: 100%;
+  padding: 3%;
+  text-align: center;
+}
+.labelDivK{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.labelDivK img{
+  width: 100%;
+}
+.labelDiv{
+  position: relative;
+  width: 110%;
+  left: -5%;
+  text-align: center;
+  font-size: 8pt;
+  letter-spacing: .8pt;
+  color: rgb( 114,102,206);
+  font-weight: 100;
+}
+.labelDiv .spanLeft{
+  position: absolute;
+  left: 0rem;
+}
+.labelDiv .spanRight{
+  position: absolute;
+  right: 0rem;
+}
+.photoDiv{
+  //height: 413px;
+  margin-bottom: 3rem;
+  border: 1px solid rgb( 114,102,206);
+  border-radius: 5px;
+  padding: 20px 25px;
+  background: #fff;
+}
+.photoText{
+  font-size: 11pt;
+  letter-spacing: 0.65pt;
+  text-align: left;
+  margin-bottom: 20pt;
+  font-weight: 100;
+}
+.photoJDT{
+  width: 80px;
+  margin: 20px auto 0;
+}
+.photoUpdataDiv{
+  background: rgb( 218,218,218) url("../../assets/imgs/cameraUploadProfile@3x.png") no-repeat center center;
+  background-size: 70% 50%;
+  width: 100%;
+  height: 255px;
+  border-radius: 5px;
+  border: 1px solid rgb( 151,151,151);
+  position: relative;
+  overflow: hidden;
+}
+.add-photo{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 300%;
+  max-height: 300%;
+}
+.FDSXdiv{
+  position: absolute;
+  z-index: 99;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  background: rgba( 0,0,0,0.6);
+}
+.FDSXdiv ul li{
+  float: left;
+  width: 49%;
+  height: 49px;
+  text-align: center;
+}
+.FDSXdiv ul li img{
+  height: 40px;
+  width: 40px;
+  margin: 5px auto;
+}
+.FDSXdiv ul li.fangda{
+  border-right: 1px solid #1e1e1e;
+}
+.nextBtn{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  background: rgb(114,102,206);
+  margin-top: 10px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.dmImg li,.mhImg li{
+  width: 30% ;
+  height: 80px;
+  border: 1px solid rgb(218,218,218);
+  background: rgb(218,218,218);
+  border-radius: 5px;
+  text-align: center;
+  float: right;
+  margin: 12px 4.5% 0px 0;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.mhImg li img{
+  width: 100%;
+  height: 100%;
+}
+.dmImg li img{
+  width: 100%;
+  height: 100%;
+  padding:10px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.dmImg li img.fistImg{
+  width: 100%;
+  height: 100%;
+  padding:0;
+}
+.clear{
+  clear: both;
+}
+.blur {
+  filter: blur(6px);
+  -webkit-filter: blur(6px); /* chrome, opera */
+  -ms-filter: blur(6px);
+  -moz-filter: blur(6px);
+}
+.blurmin{
+  filter: blur(3px);
+  -webkit-filter: blur(3px); /* chrome, opera */
+  -ms-filter: blur(3px);
+  -moz-filter: blur(3px);
+}
+.blurmax {
+  filter: blur(6px);
+  -webkit-filter: blur(6px); /* chrome, opera */
+  -ms-filter: blur(6px);
+  -moz-filter: blur(6px);
+}
+#logoImg{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -999px;
+  left: -999px;
+  z-index: 99;
+}
+#logoImg.move{
+  top: 20px;
+  left: 30%;
+}
+.submitDiv{
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+.submitDiv a{
+  display: block;
+  text-decoration: none;
+}
+input[type=submit] {
+  height: 40pt;
+  background: #7266CE;
+  border: 1px solid #7266CE;
+ // border-radius: 5px;
+  font-family: PingFangSC-Light;
+  font-size: 14pt;
+  font-weight: 100;
+  color: #FFFFFF;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
+  width: 100%;
+  font-style: normal;
+  text-decoration: none;
+  /*  margin:5rem 0 3rem;*/
+}
+.modal-login{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba( 0,0,0,0.5);
+  z-index: 100;
+ /* display: none;*/
+  .modelDiv{
+    width: 80%;
+    padding: 2rem;
+    margin: 60pt auto;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .inputStyle {
+    width: 100%;
+    height: 2.8rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 0.6rem;
+    padding: 0 1rem;
+    border:1px solid rgb( 114,102,206);
+  }
+  .button1{
+    width: 100%;
+    height: 3.1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1.6rem;
+    padding: 0 1rem;
+    background: #7266ce;
+    color: #fff;
+    /*  letter-spacing: 0.25rem;
+      font-weight: 600;*/
+    font-size: 1.2rem;
+  }
+  .headBt{
+    font-family: WenYue-HouXianDaiTi-NC-W2-75;
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .bodyText{
+    margin-bottom: 5rem;
+  }
+  .inputDiv h3{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.modal-kefu{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba( 0,0,0,0.5);
+  z-index: 100;
+  /*display: none;*/
+  .modelDiv{
+    width: 80%;
+    padding: 2rem 3rem 4rem;
+    margin: 60pt auto;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .button1{
+    width: 100%;
+    height: 3.1rem;
+    line-height: 3.1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1.6rem;
+    padding: 0 1rem;
+    background: #7266ce;
+    color: #fff;
+    /*  letter-spacing: 0.25rem;
+      font-weight: 600;*/
+    font-size: 1.2rem;
+  }
+  .headBt{
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .bodyText{
+    margin-bottom: .5rem;
+  }
+  .imgDiv{
+    text-align: center;
+    padding: 3rem 0;
+
+  }
+  .imgDiv img{
+    width: auto;
+    height: 10rem;
+  }
+  .iconWX{
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height:2rem;
+    top: .6rem;
+    background: url("../../assets/imgs/weChatIcon@3x.png") no-repeat center center;
+    background-size: contain;
+  }
+}

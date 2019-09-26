@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="113px" viewBox="0 0 112 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Profile pic 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lovemaker.io-2.5-Settings-photo" transform="translate(-12.000000, -488.000000)" stroke="#FFD3DA">
+            <g id="Profile-Pic-Editing" transform="translate(13.000000, 250.000000)">
+                <g id="Profile-pic-4" transform="translate(0.000000, 240.000000)">
+                    <path d="M5,0 L105,0 C107.761424,-5.07265313e-16 110,2.23857625 110,5 L110,105 C110,107.761424 107.761424,110 105,110 L5,110 C2.23857625,110 3.38176876e-16,107.761424 0,105 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z" id="Profile-pic-3-bg" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-dasharray="10,10"></path>
+                    <g id="ic_camera" transform="translate(26.000000, 26.000000)">
+                        <g id="camera">
+                            <g transform="translate(4.833333, 9.666667)" stroke-width="1.5">
+                                <rect id="Rectangle-5" stroke-linecap="round" stroke-linejoin="round" x="0" y="7.25" width="48.3333333" height="33.8333333"></rect>
+                                <circle id="Oval" cx="31.4166667" cy="24.1666667" r="7.25"></circle>
+                                <rect id="Rectangle" stroke-linecap="round" stroke-linejoin="round" x="4.83333333" y="0" width="14.5" height="7.25"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

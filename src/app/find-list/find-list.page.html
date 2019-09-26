@@ -1,0 +1,97 @@
+
+    <div class="header" id="myHeader">
+        <div class="findListNav">
+            <ul>
+                <li><img  routerLink="/home" src="../../assets/imgs/button_main.svg" alt=""></li>
+                <li><img  routerLink="/findList" src="../../assets/imgs/button_zx.svg" alt=""></li>
+                <li class="zrButton"><img  routerLink="/findList" src="../../assets/imgs/button_zr.svg" alt=""></li>
+                <li><img  routerLink="/user" src="../../assets/imgs/button_gx.svg" alt=""></li>
+                <li><img  routerLink="/usersetting" src="../../assets/imgs/button_gr.svg" alt=""></li>
+            </ul>
+        </div>
+        <!--
+         -->
+    </div>
+    <app-find-serach></app-find-serach>
+
+<ion-content id="tabsubject" class="bgDiv scrollDiv">
+    <ion-list class="bgDiv" id="tabsubjectChild">
+        <div *ngFor="let item of items" class="itemMargin" >
+           <div class="itemDDiv">
+               <app-find-cart class="findDiv" [cartArr]="item.cartArr" [showMDiv] = "showMDiv" [showFDiv]="showFDiv"  [showBDiv]="showBDiv" (showEvevEmit)="onShowEvevEmit($event)"></app-find-cart>
+           </div>
+            <div class="clear"></div>
+        </div>
+    </ion-list>
+    <!--
+      <div *ngIf="selectedItem" padding>
+        You navigated here from <b>{{selectedItem.title }}</b>
+      </div>
+    -->
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="isShow">
+        <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>
+
+
+<div *ngIf="showErr">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardERRDiv" >
+        <h3 class="h3">抱歉！您的会员等级无法查看！</h3>
+        <p class="textP">您现在的LM会员等级还无法查看该会员的信息，请联系专属客服进行会员升级。</p>
+        <div class="btnClass">
+            <button class="lookmore"  (click)="showErrModel($event)">暂不升级</button>
+            <button class="sure"  (click)="showKefuuModel($event)">联系客服</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="showKefu">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV " >
+        <div class="imgMDiv">
+            <img src="../../assets/imgs/MaleQR.svg" alt="">
+        </div>
+        <div class="btnClass">
+            <button class="wxTj"  (click)="showKefuuModel($event)">添加客服微信</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="showMDiv">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardMDiv " >
+        <!--<h3>想看TA真相？</h3>-->
+        <div class="imgClass"><img src="../../assets/imgs/ma_popup.svg" alt=""></div>
+        <div class="btnClass">
+            <button class="lookmore"  (click)="showMDivFunction($event)">再看看</button>
+            <button class="sure" (click)="showErrModel($event)">查看无码</button>
+        </div>
+        <div class="xsj"></div>
+    </div>
+</div>
+
+<div  *ngIf="showFDiv">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardFDiv">
+        <!--<h3>想要翻TA牌？</h3>-->
+        <div class="imgClass"><img src="../../assets/imgs/fan_popup.svg" alt=""></div>
+        <div class="btnClass">
+            <button class="lookmore" (click)="showFDivFunction($event)">再看看</button>
+            <button class="sure" (click)="showErrModel($event)">确认翻牌</button>
+        </div>
+        <div class="xsj"></div>
+    </div>
+</div>
+<div  *ngIf="showBDiv">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardBDiv">
+        <!--<h3>强势霸占TA？</h3>-->
+        <div class="imgClass"><img src="../../assets/imgs/ba_popup.svg" alt=""></div>
+        <div class="btnClass">
+            <button class="lookmore" (click)="showBDivFunction($event)">再看看</button>
+            <button class="sure" (click)="showErrModel($event)">确认霸占</button>
+        </div>
+        <div class="xsj"></div>
+    </div>
+</div>

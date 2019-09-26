@@ -1,0 +1,146 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-button color="secondary" > 
+          <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  
+    <ion-title style=text-align:center routerLink="/home">
+        <img src="../../assets/imgs/LMCLUB_logoBlack.svg" alt="LMCLUB">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/user"><img src="../../assets/imgs/ic_username.svg" alt="user"></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding > 
+  <div class = "lm-home-page" >
+    <div class="span" >
+      <!--<p>我是...{{me}}, 我想要 {{Iwant}} </p>-->
+      <h3>我是男生, 我想找...</h3>
+      
+      <ion-button  color="tertiary" fill routerLink="/signup">长期恋爱</ion-button>
+      <ion-button  color="tertiary" routerLink="/signup">短期交往</ion-button>
+      <ion-button  color="tertiary" fill routerLink="/signup">旅行伴侣</ion-button>
+      <ion-button  color="tertiary" fill routerLink="/signup">寻求刺激</ion-button>
+      
+    </div>
+    
+    
+  </div>
+  <!--
+  <div class="video">
+    <div class = "home_h">LM旅趴视频</div>
+    <div class = "home_h2">遍布世界各地的独家Party视频</div>
+    <div class = "video_swiper"></div>
+  </div>-->
+  <h2>LM旅趴视频</h2>
+  <p>遍布世界各地的独家Party视频</p>
+  <div class = "video_swiper">
+      <ion-slides>
+          <ion-slide>
+            <h1>video 1</h1>
+          </ion-slide>
+          <ion-slide>
+            <h1>video 2</h1>
+          </ion-slide>
+          <ion-slide>
+            <h1>video 3</h1>
+          </ion-slide>
+          <ion-slide>
+            <h1>video 4</h1>
+          </ion-slide>
+        </ion-slides>
+    <!--<ion-slides pager>
+      <ion-slide *ngFor="let slide of slides">
+        <ion-toolbar>
+          <ion-buttons end>
+            <button ion-button color="primary">Skip</button>
+          </ion-buttons>
+        </ion-toolbar>
+        <img [src]="slide.image" class="slide-image"/>
+        <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+        <p [innerHTML]="slide.description"></p>
+      </ion-slide>
+      <ion-slide>
+        <ion-toolbar>
+        </ion-toolbar>
+        <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+        <h2 class="slide-title">Ready to Play?</h2>
+        <button ion-button large clear icon-end color="primary">
+          Continue
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+      </ion-slide>
+    </ion-slides>-->
+  </div>
+  <h2>LM订制约会</h2>
+  <div class= "dating">
+    <p><img src="../../assets/imgs/dating.svg" alt="dating"></p>
+  </div>
+  <!--
+  <div class= "user">
+    <div class = "home_h">会员们说</div>
+    <div class = "home_h2">来自LM会员们真实的声音</div>
+    <div class = "video_swiper"></div>
+  </div>-->
+  <h2>会员们说</h2>
+  <p>来自LM会员们真实的声音</p>
+  <div class = "video_swiper">
+    <ion-slides>
+      <ion-slide>
+        <h1>video 1</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>video 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>video 3</h1>
+      </ion-slide>
+    </ion-slides>
+    </div>
+  <h2>媒体报道</h2>
+<div style=text-align:center>
+  <!-- <ion-button routerLink=""><img src="../../assets/imgs/collegedaily.svg" alt="user"></ion-button> -->
+    <p><img src="../../assets/imgs/sina.svg" alt="sina"></p>
+    <p><img src="../../assets/imgs/zhihu.svg" alt="zhihu"></p>
+    <br>
+    <p><img src="../../assets/imgs/netease.svg" alt="netease"></p>
+    <br>
+    <p><img src="../../assets/imgs/viceChina.svg" alt="viceChina"></p>
+    <br>
+    <p><img src="../../assets/imgs/collegedaily.svg" alt="collegedaily"></p>
+    <br>
+    <!--button for login & singup-->
+    <ion-button routerLink="/user" expand="block" color="tertiary">会员登录</ion-button>
+    <ion-button routerLink="/signup" expand="block" color="tertiary">申请入会</ion-button> 
+    <br>
+    <br>
+    <br>
+    <!-- social media -->
+    <div class="social_media">
+      <ul>
+        <li><a href="https://www.facebook.com/LM-CLUB-1413356455353537/"><img id="social-tw" class= "social" src="../../assets/imgs/social_twitter.svg"></a>
+        <li><a href="https://www.instagram.com/lm.club"><img id="social-it" class= "social" src="../../assets/imgs/social_instagram.svg"></a>
+        <li><a href="https://www.linkedin.com/company/elitely/"><img id="social-li" class= "social" src="../../assets/imgs/social_linkedin.svg"></a>
+        <li><a href="#"><img id="social-yt" class= "social" src="../../assets/imgs/social_youtube.svg"></a></li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <p>免责声明</p>
+    <p>用户协议</p>
+    <p>关于隐私</p>
+    <p>常见问题</p>
+    <p>关于LM</p>
+    <p>加入我们</p>
+    <p>联系我们</p>
+    <p>京ICP备170025038号-1</p>
+    <p>COPYRIGHT @ 2012 - 2018</p>
+    <p>ALL Rights Reserved</p>
+</div>
+  <!--p><a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p-->
+
+</ion-content>

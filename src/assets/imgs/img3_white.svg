@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="22px" viewBox="0 0 25 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>碼</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FD2C7A" offset="0%"></stop>
+            <stop stop-color="#FF7255" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="TpldKhangXiDictTrial, TypeLand.com KhangXi Dict Trial" font-size="24" font-weight="normal">
+        <g id="lovemaker.io-2.5-Browse1" transform="translate(-64.000000, -650.000000)" fill="url(#linearGradient-1)">
+            <g id="Buttons" transform="translate(44.000000, 629.000000)">
+                <g id="無碼">
+                    <text id="碼">
+                        <tspan x="20" y="41">碼</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

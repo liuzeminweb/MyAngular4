@@ -1,0 +1,291 @@
+<div class="item-div"  >
+    <div class="item-image">
+        <div class="slide-title-div">
+            <ul>
+                <li data-name="照片" class="cartLi">
+                    <h2 [ngClass]="{'slide-title-active': selectedParentIndex == 0 }">照片</h2>
+                    <div class="cartK">
+                        <ng-container  *ngFor="let slide of cartArr;">
+                            <span  *ngIf="slide.pageParent==0" class="slide-title-unit" [ngClass]="{'slide-font-active': selectedIndex == slide.page }" [ngStyle]="slideunit0" (click)="onClick(slide)"></span>
+                        </ng-container>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li data-name="资料" class="cartLi">
+                    <h2 [ngClass]="{'slide-title-active': selectedParentIndex == 1 }">资料</h2>
+                    <div class="cartK">
+                        <ng-container  *ngFor="let slide of cartArr;">
+                            <span  *ngIf="slide.pageParent==1" class="slide-title-unit" [ngClass]="{'slide-font-active': selectedIndex == slide.page}" (click)="onClick(slide)"></span>
+                        </ng-container>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+                <li data-name="偏好" class="cartLi">
+                    <h2 [ngClass]="{'slide-title-active': selectedParentIndex == 2 }">偏好</h2>
+                    <div class="cartK">
+                        <ng-container  *ngFor="let slide of cartArr;">
+                            <span  *ngIf="slide.pageParent==2" class="slide-title-unit" [ngClass]="{'slide-font-active': selectedIndex == slide.page}" (click)="onClick(slide)"></span>
+                        </ng-container>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="side-bottom-div" [ngClass]="{'side-img-div': selectedParentIndex >= 1 }">
+            <div class="cardImg  leftButtonImg" [ngClass]="{'classOn': showMDiv}">
+                <a href="javascript:;" class="cardImgA imgM" (click)="showMDivFunction($event)"></a>
+            </div>
+            <div class="cardImg centerButtonImg" [ngClass]="{'classOn': showFDiv}" >
+                <a href="javascript:;" class="cardImgA imgF" (click)="showFDivFunction($event)"></a>
+            </div>
+            <div class="cardImg rightButtonImg" [ngClass]="{'classOn': showBDiv}">
+                <a href="javascript:;" class="cardImgA imgB" (click)="showBDivFunction($event)"></a>
+            </div>
+        </div>
+        <ion-slides (ionSlideDidChange)="slideChanged()">
+            <ng-container  *ngFor="let slide of cartArr; ">
+                <ion-slide  *ngIf="slide.pageParent==0">
+                    <div class="card-img">
+                        <div class="cartimg" style="background-image: url('../../assets/imgs/Dating_Card1.png')"></div>
+                        <!--<img class="cartimg" src="../../assets/imgs/Dating_Card1.png"/>-->
+                        <p class="fontsize">3235 多伦多 A23 H178 W65</p>
+                    </div>
+                </ion-slide>
+            </ng-container>
+            <ion-slide>
+                <div class="card-info">
+                    <div>
+                        <div class="userPPDdiv">
+                            <dl class="userItem">
+                                <dt class="userHead">
+                                    <div class="imgDiV" style="background-image: url('../../assets/imgs/Dating_Card1.png')"></div></dt>
+                                <dd>
+                                    <span class="labelTitle">名字，年龄</span><br/>
+                                    <span class="labelTitle01">多伦哥</span><br/>
+                                    <span class="labelTitle01">3235</span>
+                                </dd>
+                            </dl>
+                            <div class="ppd">查看匹配度</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tableItem">
+                            <div  class="labelTitle itemLeft">验证方式</div>
+                            <div class="itemRight textRight">
+                                <a href="javascript:;" class="man"></a>
+                                <a href="javascript:;" class="phone"></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="pbottom marginTop3"></div>
+                        <div class="tableItem">
+                            <div class="labelTitle itemLeft">身高</div>
+                            <div class="itemRight textRight">178cm</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xpbottom"></div>
+                        <div class="tableItem">
+                            <div class="labelTitle itemLeft">体重</div>
+                            <div class="itemRight textRight">65kg</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xpbottom"></div>
+                        <div class="tableItem">
+                            <div class="labelTitle itemLeft">星座</div>
+                            <div class="itemRight textRight">天秤座</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xpbottom"></div>
+                        <div class="tableItem">
+                            <div class="labelTitle itemLeft">职业</div>
+                            <div class="itemRight textRight">等级不可见<img class="waring" src="../../assets/imgs/ic_warning.png" alt=""></div><div class="clear"></div>
+                        </div>
+                        <div class="xpbottom"></div>
+                        <div class="tableItem pbottom">
+                            <div class="labelTitle itemLeft">罩杯</div>
+                            <div class="itemRight textRight">等级不可见<img class="waring" src="../../assets/imgs/ic_warning.png" alt=""></div><div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="card-info">
+                    <div>
+                        <div class="userPPDdiv">
+                            <dl class="userItem">
+                                <dt class="userHead">
+                                    <div class="imgDiV" style="background-image: url('../../assets/imgs/Dating_Card1.png')"></div></dt>
+                                <dd>
+                                    <span class="labelTitle">名字，年龄</span><br/>
+                                    <span class="labelTitle01">多伦哥</span><br/>
+                                    <span class="labelTitle01">3235</span>
+                                </dd>
+                            </dl>
+                            <div class="ppd">查看匹配度</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xpbottom2 marginTop2"></div>
+                        <div class="titleH2">
+                            <div  class="itemLeft" style="    padding-left: 5px;">个人标签</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tbborder">
+                            <div class="bqdiv">
+                            <ion-chip class="bgColor">
+                                <ion-label>颜控</ion-label>
+                            </ion-chip>
+                            <ion-chip class="bgColor">
+                                <ion-label>话痨</ion-label>
+                            </ion-chip>
+                            <ion-chip class="bgColor">
+                                <ion-label >吃货</ion-label>
+                            </ion-chip>
+                            <ion-chip class="bgColor">
+                                <ion-label >潮人</ion-label>
+                            </ion-chip>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="titleH2">
+                            <div  class="itemLeft" style="    padding-left: 5px;">兴趣标签</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tbborder">
+                            <div class="bqdiv">
+                                <ion-chip class="bgColor">
+                                    <ion-label>夜店</ion-label>
+                                </ion-chip>
+                                <ion-chip class="bgColor">
+                                    <ion-label>旅行</ion-label>
+                                </ion-chip>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="card-info">
+                    <div>
+                        <div class="userPPDdiv">
+                            <dl class="userItem">
+                                <dt class="userHead">
+                                    <div class="imgDiV" style="background-image: url('../../assets/imgs/Dating_Card1.png')"></div></dt>
+                                <dd>
+                                    <span class="labelTitle">名字，年龄</span><br/>
+                                    <span class="labelTitle01">多伦哥</span><br/>
+                                    <span class="labelTitle01">3235</span>
+                                </dd>
+                            </dl>
+                            <div class="ppd">查看匹配度</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xpbottom2 marginTop2"></div>
+                        <div class="titleH20" style="padding-top:15px;">
+                            <div  class="itemLeft" style="    padding-left: 5px;">偏好标签</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tbborder">
+                            <div class="bqdiv">
+                                <ion-chip class="bgColor" style="width:68px;">
+                                    <ion-label>搞怪</ion-label>
+                                </ion-chip>
+                                <ion-chip class="bgColor" style="width:68px;">
+                                    <ion-label>小狼狗</ion-label>
+                                </ion-chip>
+                                <ion-chip class="bgColor" style="width:68px;">
+                                    <ion-label >吃货</ion-label>
+                                </ion-chip>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="titleH2">
+                            <div  class="itemLeft" style="    padding-left: 5px;">我想对你说</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tbborder">
+                            <div class="bqdiv">
+                                <p style="font-size: 11pt;line-height: 18pt;"> 腿长话少，经常出没于纽约多伦多洛杉矶。寻找喜欢蹦迪旅游的小伙伴。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="card-info">
+                    <div>
+                        <div class="userPPDdiv">
+                            <dl class="userItem">
+                                <dt class="userHead">
+                                    <div class="imgDiV" style="background-image: url('../../assets/imgs/Dating_Card1.png')"></div></dt>
+                                <dd>
+                                    <span class="labelTitle">名字，年龄</span><br/>
+                                    <span class="labelTitle01">多伦哥</span><br/>
+                                    <span class="labelTitle01">3235</span>
+                                </dd>
+                            </dl>
+                            <div class="ppd">查看匹配度</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xpbottom2 marginTop2"></div>
+                        <div class="titleH2 pbottom">
+                            <div  class="itemLeft" style="    padding-left: 5px;"> 高级偏好</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tableItem">
+                            <div class="labelTitle itemLeft">交往意愿</div>
+                            <div class="itemRight textRight">等级不可见<img class="waring" src="../../assets/imgs/ic_warning.png" alt=""></div><div class="clear"></div>
+                        </div>
+                        <div class="xpbottom"></div>
+                        <div class="tableItem pbottom">
+                            <div class="labelTitle itemLeft">走心走肾</div>
+                            <div class="itemRight textRight">等级不可见<img class="waring" src="../../assets/imgs/ic_warning.png" alt=""></div><div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="card-info">
+                    <div>
+                        <div class="userPPDdiv">
+                            <dl class="userItem">
+                                <dt class="userHead">
+                                    <div class="imgDiV" style="background-image: url('../../assets/imgs/Dating_Card1.png')"></div></dt>
+                                <dd>
+                                    <span class="labelTitle">名字，年龄</span><br/>
+                                    <span class="labelTitle01">多伦哥</span><br/>
+                                    <span class="labelTitle01">3235</span>
+                                </dd>
+                            </dl>
+                            <div class="ppd">查看匹配度</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="xpbottom2 marginTop2"></div>
+                        <div class="titleH2 pbottom">
+                            <div  class="itemLeft" style="    padding-left: 5px;">高级偏好</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tableItem">
+                            <div class="labelTitle itemLeft">性偏好</div>
+                            <div class="itemRight textRight">等级不可见<img class="waring" src="../../assets/imgs/ic_warning.png" alt=""></div><div class="clear"></div>
+                        </div>
+                        <div class="xpbottom"></div>
+                        <div class="tableItem">
+                            <div class="labelTitle itemLeft">字母属性</div>
+                            <div class="itemRight textRight">等级不可见<img class="waring" src="../../assets/imgs/ic_warning.png" alt=""></div><div class="clear"></div>
+                        </div>
+                        <div class="xpbottom"></div>
+                        <div class="tableItem pbottom">
+                            <div class="labelTitle itemLeft">反馈故事</div>
+                            <div class="itemRight textRight">联系客服</div>
+                        </div>
+
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slides>
+
+    </div>
+</div>

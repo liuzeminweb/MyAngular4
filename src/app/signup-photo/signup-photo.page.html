@@ -1,0 +1,111 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title style="text-align:center; ">
+            <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+            <img  routerLink="/home" src="../../assets/imgs/LMCLUB_logoBlack.svg" alt="LMCLUB">
+        </ion-title>
+      <ion-buttons slot="end">
+        <ion-button routerLink="/user"><img src="../../assets/imgs/ic_username.svg" alt="user"></ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class = "banner">
+        <!--header -->
+        <div class = "WenYue">
+            上传真实照片 开启真实社交
+        </div>
+        <div class="imgButton">
+            <div class="photoDiv"  *ngIf="bz1">
+                <div class="photoText">请上传一张真实图片作为头像相片，您可以选择为照片打码或者模糊来保护隐私。</div>
+                <div class="photoUpdataDiv">
+                    <img class="add-photo" [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt=""/>
+                    <input id="uploadImg" (change)="uploadImg($event)" type="file" accept="image/*;capture=camera" style="position: absolute; top: 0;display:block;height:100%;width:100%;opacity:0;" />
+                </div>
+                <div class="photoJDT"><img src="../../assets/imgs/photoup1.svg" alt=""></div>
+            </div>
+            <div class="photoDiv" *ngIf="bz2">
+                <div class="photoText">通过照片下方放大缩小按钮，为您的照片设置大小，手动调整头像显示区域。</div>
+                <div class="photoUpdataDiv">
+                    <img appAppDrag id="showImg" class="add-photo" [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt=""/>
+                    <div class="FDSXdiv">
+                        <ul>
+                            <li class="fangda" (click)="fdFunction($event)" >
+                                <img src="../../assets/imgs/fill18@3x.png" alt="">
+                            </li>
+                            <li (click)="sxFunction($event)"> <img src="../../assets/imgs/fill17@3x.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div><button class="nextBtn" (click)="showBz3($event)">下一步</button></div>
+                <div class="photoJDT"><img src="../../assets/imgs/photoup2.svg" alt=""></div>
+            </div>
+            <div class="photoDiv" *ngIf="bz3">
+                <div class="photoText">您可以选择为你的相片进行打码或者模糊处理（只有特定等级的会员才可以翻牌查看照片原图哦）。</div>
+                <div class="photoUpdataDiv">
+                    <img id="showImgHou" class="add-photo" [src]="_d.bypassSecurityTrustUrl(imgsrc)" [ngClass]="mhblur" [ngStyle]="imgStyle" alt=""/>
+                    <img id="logoImg" [ngStyle]="logoImgShow" appDrag [src]="logoImg" alt=""/>
+                </div>
+                <div class="dmDiv">
+                    <ul class="dmImg">
+                        <li (click)="dmFunction('1',$event);$event.stopPropagation()" style="margin-right:0;"><img src="../../assets/imgs/sy2.png" alt="" ></li>
+                        <li (click)="dmFunction('1',$event);$event.stopPropagation()"><img src="../../assets/imgs/LMCLUB_logoBlack.svg" alt=""></li>
+                        <li (click)="dmFunction('null',$event);$event.stopPropagation()"><img class="fistImg" [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt=""></li>
+                        <li (click)="dmFunction('1',$event);$event.stopPropagation()" style="margin-right:0;"><img src="../../assets/imgs/sy4.png" alt=""></li>
+                        <li (click)="dmFunction('1',$event);$event.stopPropagation()"><img src="../../assets/imgs/sy1.png" alt=""></li>
+                    </ul>
+                    <div class="clear"></div>
+                    <ul class="mhImg">
+                        <li style="margin-right:0;"><img class="blurmax" (click)="mhFunction('blurmax')"  [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt=""></li>
+                        <li><img class="blurmin" (click)="mhFunction('blurmin')"   [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt=""></li>
+                        <li><img class="fistImg" (click)="mhFunction('blurnull')"  [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt=""></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="photoJDT"><img src="../../assets/imgs/photoup3.svg" alt=""></div>
+            </div>
+            <div class="labelDivK">
+                <img src ="../../assets/imgs/Progress_Line3.svg">
+                <div class="labelDiv">
+                    <span class="spanLeft">基本资料</span>
+                    <span>个人标签</span>
+                    <span class="spanRight">上传照片</span>
+                </div>
+            </div>
+        </div>
+        <div class="submitDiv" *ngIf="submitShow">
+            <a herf="javascript:;" (click)="goNext()"><input type="submit" value="确认修改" ></a>
+        </div>
+        <!--form container -->
+    </div>
+  </ion-content>
+
+<div class="modal-login" *ngIf="showLoginM">
+    <div class="modelDiv">
+        <div class="headBt">资料注册成功！<br/> 距离完美约会只差一步…</div>
+        <div class="bodyText">请打开您输入的邮箱地址(lyy9286@live.cn)，点击验证邮件里面的链接进行验证吧！</div>
+        <div class="inputDiv">
+            <h3>还没有收到邮件？</h3>
+            <p>请点击下方重新发送或修改邮箱地址。</p>
+        </div>
+        <input  class="inputStyle" placeholder="lyy9286@live.cn" type="text">
+        <div  class="buttonDiv">
+            <button class="button1" (click)="rpostFunction()">重新发送</button>
+            <button class="button1" routerLink="/user" >通过手机号验证</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-kefu"  *ngIf="showkefuM">
+    <div class="modelDiv">
+        <div class="headBt">女生会员<br/>  请小窗客服进行人工审核</div>
+        <div class="bodyText">请添加24小时女生专属客服微信进行人工审核哦。</div>
+        <div class="imgDiv">
+            <img src="../../assets/imgs/modelImg.png" alt="">
+        </div>
+        <div  class="buttonDiv">
+            <button class="button1" routerLink="/user" >联系客服 <span class="iconWX"></span></button>
+        </div>
+    </div>
+</div>

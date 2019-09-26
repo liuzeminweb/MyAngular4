@@ -1,0 +1,86 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+}
+.lm-userinfo-settings-page {
+  background-color: rgb( 242 ,242 ,242);
+}
+.imgDiv{
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+  border: 1px solid rgb(254,96,96);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20pt;
+  position: relative;
+}
+.touxImgDiv{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sjButton{
+  background: #fff;
+  color: rgb( 239, 80, 105);
+  height: 50px;
+  line-height: 50px;
+  margin-top: 33px;
+  font-family: PingFangSC-Semibold;
+  font-size: 18px;
+  font-weight: 600;
+  border-top: 1px solid rgb( 200 ,199 ,204);
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+}
+.sjButton span{
+  display: block;
+  width: 100%;
+}
+.sjjjText{
+  text-align: center;
+  font-size: 8pt;
+  margin-top: 5pt;
+  font-family: PingFangSC-Regular;
+  color: rgb( 184 ,184 ,186);
+}
+.divKuang{
+  margin-bottom: 30pt;
+  border-top: 1px solid rgb( 200 ,199 ,204);
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+}
+.syfpNumber{
+  margin-top: 50pt;
+}
+.myListrow{
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+}
+.itemLeft{
+  float: left;
+  padding-left: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .75pt;
+  font-family: PingFangSC-Bold;
+}
+.itemRight{
+  float: right;
+  font-size: 16px;
+  letter-spacing: .75pt;
+  padding-right: 12px;
+  color: rgb( 137, 137, 137);
+}
+.bottomBorder{
+  height: 0px;
+  margin-left: 1rem;
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+}
+.icRight{
+  position: relative;
+  top: 1pt;
+}

@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            List
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let item of items">
+            <div class="item-image">
+                <ion-slides pager>
+                    <ion-slide style="background-color: green">
+                        <img src="../../assets/img/Dating_Card1.svg"/>
+                    </ion-slide>
+
+                    <ion-slide style="background-color: blue">
+                        <img src="../../assets/img/Dating_Card1.svg"/>
+                    </ion-slide>
+
+                    <ion-slide style="background-color: red">
+                        <img src="../../assets/img/Dating_Card1.svg"/>
+                    </ion-slide>
+                </ion-slides>
+
+            </div>
+            <h2>{{item.title}}</h2>
+            <h3>Don't Know What To Do!</h3>
+            <p>I've had a pretty messed up day. If we just...</p>
+        </ion-item>
+    </ion-list>
+    <!--
+      <div *ngIf="selectedItem" padding>
+        You navigated here from <b>{{selectedItem.title }}</b>
+      </div>
+    -->
+</ion-content>

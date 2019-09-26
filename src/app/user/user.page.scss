@@ -1,0 +1,96 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+  top:0pt;
+}
+.user-page {
+  background: url("../../assets/imgs/homeBanner.png") no-repeat  top right;
+  background-size: cover;
+  min-height: 100%;
+  background-size: 100% 120%;
+  font-family: PingFangSC-Medium;
+  padding: 0 0 20pt;
+}
+.banner{
+   text-align: center;
+   padding: 1rem;
+}
+.banner h2{
+  font-size: 18pt;
+  letter-spacing: 1.67pt;
+  text-align: left;
+  padding: 0 2.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+  font-family: WenYue-HouXianDaiTi-NC-W2-75;
+}
+.bannerImg{
+  height: 120pt;
+}
+.formDiv{
+  padding:0 2rem;
+}
+.inputStyle{
+  width: 100%;
+  height: 28pt;
+  line-height: 28pt;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  margin-top: 25pt;
+  font-family: PingFangSC-Medium;
+  font-size: 12pt;
+  letter-spacing: 0.48pt;
+  padding: 0 8pt;
+  //opacity: 0.3;
+}
+.aHrefDiv{
+  padding: 1rem .2rem;
+  color: #000;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+.leftDiv{
+  float: left;
+  width: 70px;
+}
+.jzzhanghaoCheck{
+   float: left;
+   width: 18px;
+   height: 18px;
+ }
+.jzzhanghaoCheck .choseImg{
+  margin: 2px;
+}
+
+.rightDiv{
+  float: right;
+}
+.rightDiv a{
+  color: #000;
+  text-decoration: none;
+}
+.button1{
+  width: 100%;
+  height: 35pt;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  margin-top: 22px;
+  padding: 0 1rem;
+  background: rgb( 114,102,206);
+  color: #fff;
+  letter-spacing: 0.85pt;
+  //font-weight: 600;
+  font-size: 13pt;
+}
+.tk{
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 6.5pt;
+  letter-spacing: 0.28pt;
+  font-family: PingFangSC-Regular;
+}

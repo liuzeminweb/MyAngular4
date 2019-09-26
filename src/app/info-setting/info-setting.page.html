@@ -1,0 +1,299 @@
+<ion-header >
+    <!--<ion-toolbar style="background: #fff;">
+        &lt;!&ndash;<ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>&ndash;&gt;
+
+    </ion-toolbar>-->
+    <ion-title class="myTitle">  <div class="backButton"  routerLink="/usersetting"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>个人资料</ion-title>
+    <div class="clear"></div>
+    <div class="myTab">
+        <ul>
+            <li class="leftLiButton" [ngClass]="{'on': photoShow}" (click)="showPhoneModel()">照片</li>
+            <li class="centerLiButton" [ngClass]="{'on': privacyShow}" (click)="showPrivacyModel()">隐私</li>
+            <li class="rightLiButton" [ngClass]="{'on': settingShow }" (click)="showInfoModel()">资料</li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</ion-header>
+<ion-content *ngIf="photoShow" class= "lm-baseinfo-settings-page photoPage">
+    <h2 class="titleh2">资料卡照片</h2>
+    <div class="divKuang" style="  padding: 20px 10px 0;">
+        <div *ngIf="dadShow" class="jq22 dad-active dad-container">
+            <div class="item item1" [ngClass]="{'example': show1}">
+               <!-- <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc1)" alt=""/>-->
+                <div *ngIf="!show1"  class="photoUpdataDiv" style="width:100% ; height: 100%;    position: relative;overflow: hidden">
+                    <img  class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc1)" [ngClass]="mhblur1" [ngStyle]="imgStyle1" alt=""/>
+                    <img class="logoImg" [ngStyle]="logoImgShow1" style="position: absolute" [src]="logoImg1" alt=""/>
+                </div>
+                <div class="span">	</div>
+                <div *ngIf="show1" class="addDiv">
+                    <span class="addItem"></span>
+                    <input id="uploadImg" (change)="preImg($event,'1')" type="file" accept="image/*;capture=camera" class="js_upFile cover1 fileItem" />
+                </div>
+                <div *ngIf="!show1" class="delDiv" (click)="delThisImg($event,'1');$event.stopPropagation();" >
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item  " [ngClass]="{'example': show2}">
+              <!--  <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc2)" alt=""/>-->
+                <div *ngIf="!show2" class="photoUpdataDiv" style="width:100% ; height: 100%;   position: relative;overflow: hidden">
+                    <img  class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc2)" [ngClass]="mhblur2" [ngStyle]="imgStyle2" alt=""/>
+                    <img class="logoImg" [ngStyle]="logoImgShow2" style="position: absolute"  [src]="logoImg2" alt=""/>
+                </div>
+                <div class="span">	</div>
+                <div *ngIf="show2" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera" multiple (change)="preImg($event,'2');" />
+                </div>
+                <div *ngIf="!show2" class="delDiv" (click)="delThisImg($event,'2');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item " [ngClass]="{'example': show3}" >
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc3)" alt=""/>
+                <div class="span">	</div>
+                <div  *ngIf="show3" class="addDiv" >
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera"  multiple id="imgOne1" (change)="preImg($event,'3');"  />
+                </div>
+                <div *ngIf="!show3" class="delDiv"(click)="delThisImg($event,'3');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item  " [ngClass]="{'example': show4}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc4)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show4" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera" multiple (change)="preImg($event,'4');"  />
+                </div>
+                <div *ngIf="!show4" class="delDiv" (click)="delThisImg($event,'4');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item  " [ngClass]="{'example': show5}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc5)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show5" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera"  multiple  (change)="preImg($event,'5');"  />
+                </div>
+                <div *ngIf="!show5" class="delDiv" (click)="delThisImg($event,'5');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+            <div class="item " [ngClass]="{'example': show6}">
+                <img class="img" [src]="_d.bypassSecurityTrustUrl(imgsrc6)" alt=""/>
+                <div class="span">	</div>
+                <div *ngIf="show6" class="addDiv">
+                    <span class="addItem"></span>
+                    <input class="js_upFile cover1 fileItem" type="file" name="cover" accept="image/*;capture=camera"  multiple  (change)="preImg($event,'6');"  />
+                </div>
+                <div *ngIf="!show6" class="delDiv" (click)="delThisImg($event,'6');$event.stopPropagation();">
+                    <span class="delItem"><img src="../../assets/imgs/ic_del.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+        <div class="fontText">
+            <div class="leftText">可上传六张照片到资料卡</div>
+            <div class="rightText">拖拽可改变显示顺序</div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="buttonSure">
+        <button class="sureButton" (click)="photoSureClick()" >确认修改</button>
+    </div>
+</ion-content>
+<ion-content  *ngIf="privacyShow" class= "lm-baseinfo-settings-page">
+    <h2 class="titleh2">账户信息</h2>
+    <div class="divKuang infoList" style="    margin-bottom: 80px;">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">邮箱</div>
+            <div class="itemRight textRight">andy.wang@gmail.com</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">手机</div>
+            <div class="itemRight textRight">+1 647-582-0000<button class="hqyzm">未验证</button></div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">微信号</div>
+            <div class="itemRight textRight">35798007</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">修改新密码</div>
+            <div class="itemRight textRight"></div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">确认新密码</div>
+            <div class="itemRight textRight"></div>
+        </div>
+    </div>
+    <div class="divKuang ycDivK" style="margin-bottom: 0">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">隐藏我的资料卡</div>
+            <div class="itemRight textRight ycRight">
+                <div class="divPosition">
+                    <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+                    <div  class="divPositionInput" (click)="showModel()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sjjjText">
+        隐藏资料卡后其他会员将无法看到你的资料卡 你将无法进行被动翻牌
+    </div>
+    <div class="buttonSure" style="padding-top: 45px">
+        <button class="sureButton" (click)="SureClick()" >确认修改</button>
+    </div>
+</ion-content>
+
+
+<ion-content *ngIf="settingShow"  class= "lm-baseinfo-settings-page">
+    <h2 class="titleh2">个人信息</h2>
+    <div class="divKuang infoList">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">昵称</div>
+            <div class="itemRight textRight">Andy</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">生日</div>
+            <div class="itemRight textRight">1990 / 07 / 10</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">身高</div>
+            <div class="itemRight textRight">181cm</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">体重</div>
+            <div class="itemRight textRight">80kg</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">职业</div>
+            <div class="itemRight textRight">互联网</div>
+        </div>
+    </div>
+    <h2 class="titleh2" style="padding-top: 20pt">地区设置</h2>
+    <div class="divKuang diquK" style="margin-bottom: 0">
+
+        <app-mychipTow  text="悉尼"  [isOn]="!isOn" isClass = "true"></app-mychipTow>
+        <app-mychipTow  text="北京"  [isOn]="!isOn" isClass = "true"></app-mychipTow>
+        <ion-chip class="bgColor1">
+            <ion-label ></ion-label>
+        </ion-chip>
+        <div class="addMyChip">+</div>
+        <div class="clear"></div>
+    </div>
+    <div class="sjjjText">
+        针对不同会员等级可以添加或修改地区增加被其他会员看到/翻牌的机会，初级会员不可以更改地区
+    </div>
+    <h2 class="titleh2" style="margin-top: 20pt">我的标签</h2>
+    <div class="divKuang myChipK" >
+        <app-mychipTow *ngFor="let item of  mychipList" [text]="item.text"  [isOn]="item.isOn" isClass = "true" [isStyle]="myStyleS" ></app-mychipTow>
+        <div class="clear"></div>
+    </div>
+    <h2 class="titleh2" style="padding-top: 20pt">我的兴趣</h2>
+    <div class="divKuang myChipK" style="    margin-bottom:100px;" >
+        <app-mychipTow *ngFor="let item of  mychipList2" [text]="item.text"  [isOn]="item.isOn" isClass = "true" [isStyle]="myStyleS" ></app-mychipTow>
+        <div class="clear"></div>
+    </div>
+    <div class="buttonSure" style="padding-top: 0">
+        <button class="sureButton">确认修改</button>
+    </div>
+</ion-content>
+
+
+
+
+
+<div *ngIf="phoneErrModelShow">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardERRDiv" >
+        <h3 class="h3">您的手机号尚未验证！</h3>
+        <p class="textP">您的手机尚未进行验证，请先验证您的手机号，再修改您的账户信息。</p>
+        <div class="btnClass">
+            <button class="lookmore"  (click)="showPhoneErrModel($event)">暂不验证</button>
+            <button class="sure"  (click)="showPhoneErrModel($event)" routerLink="/phoneYz">验证手机</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="ycErrModelShow">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV cardERRDiv" >
+        <h3 class="h3">隐藏资料卡</h3>
+        <p class="textP">隐藏资料卡后其他会员将无法看到你的资料卡，必须通过客服人工验证完成操作。</p>
+        <div class="btnClass">
+            <button class="lookmore"  (click)="showErrModel($event)">暂不考虑</button>
+            <button class="sure"  (click)="showKefuuModel($event)">联系客服</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="kefuModelShow">
+    <div class="bgModelDiv" ></div>
+    <div class="cardDIV " >
+        <div class="imgMDiv">
+            <img src="../../assets/imgs/MaleQR.svg" alt="">
+        </div>
+        <div class="btnClass">
+            <button class="wxTj"  (click)="showKefuuModel($event)">添加客服微信</button>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="imgModelShow">
+    <div class="bgModelDiv" ></div>
+    <div class="imgModelScss">
+        <div class="photoDiv" *ngIf="bz2" style="margin-bottom: 0">
+            <div class="photoText">通过照片下方放大缩小按钮，为您的照片设置大小，手动调整头像显示区域。</div>
+            <div class="photoUpdataDiv">
+                <img appAppDrag1 id="showImg" class="add-photo" [src]="_d.bypassSecurityTrustUrl(imgModelSrc)" alt=""/>
+                <div class="FDSXdiv">
+                    <ul>
+                        <li class="fangda" (click)="fdFunction($event)" >
+                            <img src="../../assets/imgs/fill18@3x.png" alt="">
+                        </li>
+                        <li (click)="sxFunction($event)"> <img src="../../assets/imgs/fill17@3x.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div><button class="nextBtn" (click)="showBz3($event)">下一步</button></div>
+            <div class="photoJDT"><img src="../../assets/imgs/photoup2.svg" alt=""></div>
+        </div>
+        <div class="photoDiv" *ngIf="bz3">
+            <div class="photoText">您可以选择为你的相片进行打码或者模糊处理（只有特定等级的会员才可以翻牌查看照片原图哦）。</div>
+            <div class="photoUpdataDiv">
+                <img id="showImgHou" class="add-photo" [src]="_d.bypassSecurityTrustUrl(imgModelSrc)" [ngClass]="mhblur" [ngStyle]="imgStyle" alt=""/>
+                <img id="logoImg" [ngStyle]="logoImgShow" appDrag1 [src]="logoImg" alt=""/>
+            </div>
+            <div class="dmDiv">
+                <ul class="dmImg">
+                    <li (click)="dmFunction('1',$event);$event.stopPropagation()" style="margin-right:0;"><img src="../../assets/imgs/sy2.png" alt="" ></li>
+                    <li (click)="dmFunction('1',$event);$event.stopPropagation()"><img src="../../assets/imgs/LMCLUB_logoBlack.svg" alt=""></li>
+                    <li (click)="dmFunction('null',$event);$event.stopPropagation()"><img class="fistImg" [src]="_d.bypassSecurityTrustUrl(imgModelSrc)" alt=""></li>
+                    <li (click)="dmFunction('1',$event);$event.stopPropagation()" style="margin-right:0;"><img src="../../assets/imgs/sy4.png" alt=""></li>
+                    <li (click)="dmFunction('1',$event);$event.stopPropagation()"><img src="../../assets/imgs/sy1.png" alt=""></li>
+                </ul>
+                <div class="clear"></div>
+                <ul class="mhImg">
+                    <li style="margin-right:0;"><img class="blurmax" (click)="mhFunction('blurmax')"  [src]="_d.bypassSecurityTrustUrl(imgModelSrc)" alt=""></li>
+                    <li><img class="blurmin" (click)="mhFunction('blurmin')"   [src]="_d.bypassSecurityTrustUrl(imgModelSrc)" alt=""></li>
+                    <li><img class="fistImg" (click)="mhFunction('blurnull')"  [src]="_d.bypassSecurityTrustUrl(imgModelSrc)" alt=""></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="photoJDT"><img src="../../assets/imgs/photoup3.svg" alt=""></div>
+        </div>
+        <div class="submitDiv" *ngIf="submitShow">
+            <a herf="javascript:;" (click)="QRXG()"><input type="submit" value="确认修改" ></a>
+        </div>
+    </div>
+</div>

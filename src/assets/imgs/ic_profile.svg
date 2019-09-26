@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lovemaker.io-2.5-Profile1" transform="translate(-324.000000, -294.000000)" stroke="#000000">
+            <g id="ic_profile" transform="translate(322.000000, 292.900000)">
+                <g id="profile">
+                    <g transform="translate(3.333333, 2.500000)" stroke-width="2">
+                        <circle id="Oval-3" cx="6.66666667" cy="3.33333333" r="3.33333333"></circle>
+                        <path d="M0,15.8333333 L0,12.9166667 C0,11.3058361 1.30273283,10 2.92605658,10 L10.4072767,10 C12.0232932,10 13.3333333,11.3091139 13.3333333,12.9166667 L13.3333333,15.8333333" id="Rectangle" stroke-linecap="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

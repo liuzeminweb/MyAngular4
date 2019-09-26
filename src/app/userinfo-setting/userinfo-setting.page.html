@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <!--<ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>-->
+    <ion-title style=text-align:center>  <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+        会员信息
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class= "lm-userinfo-settings-page">
+    <div class="imgDiv">
+        <div class="touxImgDiv">
+            <img class="touxImg" src="../../assets/imgs/Dating_Card1.png" alt="LMCLUB">-
+        </div>
+    </div>
+    <div class="sjButton">
+      <span routerLink="/home" style=text-align:center;>会员升级</span>
+    </div>
+    <div class="sjjjText">
+        升级会员可以提高你的翻牌次数和更多VIP权限哦~
+    </div>
+    <div class="divKuang syfpNumber">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">当前剩余翻牌次数</div>
+            <div class="itemRight textRight">29/30/每月</div>
+        </div>
+    </div>
+    <div class="divKuang routLinkDiv ">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">我翻过谁</div>
+            <div class="itemRight textRight" routerLink="/iFlopWho">查看 <img class="icRight" src="../../assets/imgs/icon_right.svg" alt=""></div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">谁翻过我</div>
+            <div class="itemRight textRight"  routerLink="/whoFlopMe">查看 <img class="icRight" src="../../assets/imgs/icon_right.svg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="divKuang infoList">
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">会员编号</div>
+            <div class="itemRight textRight">5.12.6</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">会员等级</div>
+            <div class="itemRight textRight">永久金牌会员</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">入会时间</div>
+            <div class="itemRight textRight">2017.07.29</div>
+        </div>
+        <div class="bottomBorder"></div>
+        <div class="myListrow">
+            <div class="labelTitle itemLeft">会员资格剩余时间</div>
+            <div class="itemRight textRight">永久</div>
+        </div>
+    </div>
+</ion-content>

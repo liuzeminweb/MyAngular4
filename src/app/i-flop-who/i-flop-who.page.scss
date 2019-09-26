@@ -1,0 +1,116 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+}
+.titleh2{
+  margin: 0;
+  background-color: rgb( 242 ,242 ,242);
+  padding: 30pt 15pt 10pt;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: rgb( 137 ,137 ,137);
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+}
+.lm-userinfo-settings-page {
+  background-color: rgb( 242 ,242 ,242);
+}
+.divKuang{
+  margin-bottom: 55px;
+  border-top: 1px solid rgb( 200 ,199 ,204);
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+}
+.myImgListrow{
+  height: 95px;
+  line-height: 95px;
+  background: #fff;
+  position: relative;
+}
+.myListrow{
+  height: 48px;
+  line-height: 48px;
+  background: #fff;
+}
+.bottomBorder{
+  height: 0px;
+  margin-left: 1rem;
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+}
+.imgDiv{
+  height: 75px;
+  width: 75px;
+  padding: 2px;
+  border: 1px solid rgb(254,96,96);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.touxImgDiv{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.itemLeft{
+  float: left;
+  padding-left: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .75pt;
+  font-family: PingFangSC-Bold;
+}
+.itemCenter{
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 5pt;
+  color: #000;
+  position: absolute;
+  width: 80pt;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.itemRight{
+  float: right;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .75pt;
+  padding-right: 15pt;
+  color: rgb( 137, 137, 137);
+}
+.hysj{
+  background: #fff;
+  color: rgb( 239, 80, 105);
+  height: 48px;
+  line-height: 48px;
+  font-family: PingFangSC-Semibold;
+  font-size: 17px;
+  font-weight: 600;
+  border-top: 1px solid rgb( 200 ,199 ,204);
+}
+.hysj span{
+  display: block;
+  width: 100%;
+}
+.sjjjText{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5pt;
+  font-family: PingFangSC-Regular;
+  color: rgb( 184 ,184 ,186);
+}
+.syfpNumber{
+  margin-bottom: 0;
+}
+.clear{
+  clear: both;
+}

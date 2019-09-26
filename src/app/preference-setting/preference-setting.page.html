@@ -1,0 +1,32 @@
+<ion-header xmlns="http://www.w3.org/1999/html">
+  <ion-toolbar>
+    <!--<ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>-->
+    <ion-title style=text-align:center> <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>偏好设置</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content  class= "lm-baseinfo-settings-page">
+
+    <h2 class="titleh2" style="margin-top: 20pt">偏好标签</h2>
+    <div class="divKuang myChipK"  style="margin-bottom: 0">
+        <app-mychipTree *ngFor="let item of  mychipList" [text]="item.text"  [isOn]="item.isOn" isClass = "true" [isStyle]="myStyleS" ></app-mychipTree>
+        <div class="clear"></div>
+        <ion-chip class="bgColor1" style="width: 50pt" >
+            <ion-label ></ion-label>
+        </ion-chip>
+        <div class="addMyChip">+</div>
+        <div class="clear"></div>
+    </div>
+    <div class="sjjjText">
+        自定义的偏好标签 每个标签请用“，”分开 最多不超过5个
+    </div>
+    <h2 class="titleh2" style="padding-top:  40pt;">我想对你说</h2>
+    <div class="divKuang myTextK"  style="margin-bottom: 150px">
+        <textarea class="textArea" placeholder="标签不能完整的定义一个人，所以你可以在这里留下你想要表达的话。"></textarea>
+        <div class="clear"></div>
+    </div>
+    <div class="buttonSure" style="padding-top: 0">
+        <button class="sureButton">确认修改</button>
+    </div>
+</ion-content>

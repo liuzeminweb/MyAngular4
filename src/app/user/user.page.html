@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+    </ion-buttons>
+    <ion-title style="text-align:center; position: relative">
+        <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+        会员登录
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class = "user-page">
+        <div class="banner">
+            <h2>是有趣的灵魂还是好看的皮囊只要你遇见…</h2>
+            <img class="bannerImg" src="../../assets/imgs/user3D.png" alt="">
+        </div>
+        <div class="formDiv">
+            <input type="text" class="inputStyle phoneNumber" placeholder="请输入验证邮箱手机或会员编号">
+            <input type="text" class="inputStyle" placeholder="请输入密码">
+           <div class="aHrefDiv">
+               <div class="leftDiv">
+                   <label (click)="choseMyCheckImg()">
+                       <div class="jzzhanghaoCheck">
+                           <img *ngIf="myCheckImg" class="choseImg" src="../../assets/imgs/jzzh_xz.svg" alt="">
+                           <img *ngIf="!myCheckImg" class="choseImg" src="../../assets/imgs/jzzh.svg" alt="">
+                       </div><span>记住账号</span>
+                   </label>
+               </div>
+               <div class="rightDiv">
+                   <a routerLink="/forgetPassword" color="light"slot="end">忘记密码？</a>
+               </div>
+           </div>
+            <div class="buttonDiv">
+                <button class="button1" routerLink="/usersetting">f  使用Facebook登录</button>
+                <button class="button1" routerLink="/signup">申请入会</button>
+            </div>
+            <p class="tk">在LM，你的隐私比什么都重要，登录表示同意<a>使用政策</a>和<a>隐私条款</a>。</p>
+        </div>
+    </div>
+</ion-content>

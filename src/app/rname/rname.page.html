@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title style="text-align:center; position: relative">
+            <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+            修改登录密码
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class = "user-page">
+        <div class="formDiv">
+            <div class="inputDiv" style="border-top: 1px solid rgb( 200,199,204)">
+                <input type="text" class="inputStyle phoneNumber" placeholder="新密码">
+                <div class="buttonBorder"></div>
+            </div>
+            <div class="inputDiv" style="border-bottom: 1px solid rgb( 200,199,204)">
+                <input type="text" class="inputStyle" placeholder="确认新密码">
+            </div>
+
+            <div class="buttonDiv">
+                <button class="button1" (click)="showTishiF()">提交</button>
+            </div>
+        </div>
+    </div>
+</ion-content>
+
+<div class="modal-tishi"  *ngIf="showTishi">
+    <div class="modelDiv">
+        <div class="bodyText">修改密码链接已发送至邮箱！</div>
+    </div>
+</div>

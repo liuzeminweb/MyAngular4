@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+      <!--<ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>-->
+        <ion-title style=text-align:center>
+            <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+            个人设置
+        </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class ="lm-user-settings-page">
+      <div class="setting-div">
+         <div class="imgDiv">
+             <div class="touxImgDiv">
+                 <img class="touxImg" src="../../assets/imgs/Dating_Card1.png" alt="LMCLUB">-
+             </div>
+             <div class="bjDiv">
+                 <img  class="tXedit" src="../../assets/imgs/ic_edit.svg" alt="">
+             </div>
+         </div>
+          <div class="textDiv">
+              <div class="lineBg">
+                  <h3>完善资料</h3>
+              </div>
+              <div class="clear"></div>
+              <div class="fontSizeDiv">
+                  <p>让对方更了解你，增加你与其他会<br>
+                      员的匹配度。</p>
+              </div>
+          </div>
+      </div>
+    <div class="buttomSunDiv">
+        <div class="borderBottom"></div>
+        <div class="buttonLi" routerLink="/infoSetting">
+            <label class="labelTitle">个人资料</label>
+            <label class="textRight"><img src="../../assets/imgs/ic_settings.svg" alt="setting"></label>
+        </div>
+        <div class="buttonLi" routerLink="/userinfoSetting">
+            <label class="labelTitle">会员信息</label>
+            <label class="textRight"><img src="../../assets/imgs/ic_swipe.svg" alt="setting"></label>
+        </div>
+        <div class="buttonLi borderBottomN"  routerLink="/preferenceSetting">
+            <label class="labelTitle">偏好设置</label>
+            <label class="textRight"><img src="../../assets/imgs/ic_heart_fill.svg" alt="setting"></label>
+        </div>
+        <div class="borderBottom"></div>
+        <div class="buttonLi outButton" routerLink="/home">
+             会员登出
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</ion-content>

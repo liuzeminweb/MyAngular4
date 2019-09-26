@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="lovemaker.io-2.5-Profile1" transform="translate(-286.000000, -295.000000)" stroke="#000000">
+            <g id="ic_phone" transform="translate(284.000000, 292.900000)">
+                <g id="phone">
+                    <g transform="translate(3.333333, 3.333333)" stroke-width="2">
+                        <path d="M0,0 C0,7.36379666 5.96953667,13.3333333 13.3333333,13.3333333 L13.3333333,13.3333333" id="Oval-2"></path>
+                        <path d="M0,3.81353821e-14 L5,-9.41402808e-09 L5,4.16666666 L0.969195079,5 C0.344178558,3.45594761 0,1.76816741 0,3.81353821e-14 Z" id="Combined-Shape"></path>
+                        <path d="M13.3333333,13.3333333 L13.3333333,8.33333333 L9.16666667,8.33333333 L8.33333333,12.3641383 C9.87738573,12.9891548 11.5651659,13.3333333 13.3333333,13.3333333 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+/*.bgColor{
+  background: #7266CE;
+  margin: 10px 5px;
+  border-radius: 12px;
+  height: 24px;
+  width: 52px;
+  text-align: center;
+  line-height: 28px;
+  float: left;
+  cursor: pointer;
+}
+.bgColor2{
+  background: #FFFFFF;
+  border: 1px solid #7266CE;
+  margin: 10px 5px;
+  border-radius: 12px;
+  height: 24px;
+  width: 52px;
+  text-align: center;
+  line-height: 28px;
+  float: left;
+  cursor: pointer;
+}*/
+.bgColor{
+  background: #FFFFFF;
+  border: 1px solid #7266CE;
+  margin: 10px 5px;
+  border-radius: 12px;
+  height: 24px;
+  width: 62px;
+  text-align: center;
+  line-height: 24px;
+  float: left;
+  cursor: pointer;
+}
+.bgColor.classOn{
+  background: #7266CE;
+  color: #fff;
+}
+.borderColor{
+  border: 1px solid #ffd3da;
+  margin-right: 10px;
+  border-radius: 10px;
+  height: 24px;
+  line-height: 24px;
+  background: #fff;
+}
+.bgColor1{
+  background: #FFFFFF;
+  border: 1px solid #ffd3da;
+  margin: 10px 5px;
+  border-radius: 12px;
+  height: 24px;
+  width: 62px;
+  text-align: center;
+  line-height: 24px;
+  float: left;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+}
+.bgColor1.classOn{
+  background: #ffd3da;
+  color: #000;
+}

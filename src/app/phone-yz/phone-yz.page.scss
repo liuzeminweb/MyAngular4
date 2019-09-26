@@ -1,0 +1,134 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+  top:0pt;
+}
+.user-page {
+ // background: url("../../assets/imgs/homeBanner.png") no-repeat  top right;
+  background: rgb(242 ,242 ,242);
+  background-size: cover;
+  min-height: 100%;
+  background-size: 100% 120%;
+}
+.banner{
+  text-align: center;
+  padding: 1rem;
+}
+.banner h2{
+  font-size: 1.7rem;
+  text-align: left;
+  padding: 0 2.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.bannerImg{
+  height: 15rem;
+  width: 15rem;
+}
+.formDiv{
+  padding:3rem 0rem;
+}
+.inputDiv{
+  width: 100%;
+  height: 3.2rem;
+  background: #fff;
+  position: relative;
+}
+.buttonBorder{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  border-bottom: 1px solid rgb( 200,199,204)
+}
+.icoDiv{
+  position: absolute;
+  left: 2rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  background-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inputStyle{
+  position: absolute;
+  right: 0;
+  width: 80%;
+  height: 3.1rem;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  padding: 0 1rem;
+  font-family: PingFangSC-Regular;
+  letter-spacing: .6pt;
+  font-size: 11pt;
+}
+.hqyzm{
+  background: rgb( 239, 80 ,105);
+  color: #fff;
+  width: 65pt;
+  height: 16pt;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  margin-top: 5pt;
+  padding: 0 1pt;
+  letter-spacing: 0.25pt;
+  font-size: 10pt;
+  position: absolute;
+  right: 5pt;
+}
+.aHrefDiv{
+  padding: 1rem .2rem;
+  color: #000;
+  margin-bottom: 5rem;
+}
+.leftDiv{
+  float: left;
+}
+.rightDiv{
+  float: right;
+}
+.rightDiv a{
+  color: #000;
+  text-decoration: none;
+}
+.buttonDiv{
+  margin: 3rem 2rem 0;
+
+}
+.button1{
+  width: 100%;
+  height: 3.1rem;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  margin-top: 1.6rem;
+  padding: 0 1rem;
+  background: rgb(  255 ,211 ,218);
+  color: #000;
+  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: PingFangSC-Medium;
+}
+.tk{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: .8rem;
+}
+.centerDiv{
+  margin-top: 1rem;
+  text-align: center;
+  font-family: PingFangSC-Medium;
+  font-size: 13pt;
+  letter-spacing: 0.7pt;
+  color: rgb( 114 ,102, 206);
+}
+.centerDiv span{
+  font-weight: 700;
+  cursor: pointer;
+}

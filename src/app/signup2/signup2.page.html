@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="end">
+          <ion-button routerLink="/user"><img src="../../assets/imgs/ic_username.svg" alt="user"></ion-button>
+      </ion-buttons>
+      <ion-title style="text-align:center; ">
+          <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+          <img  routerLink="/home" src="../../assets/imgs/LMCLUB_logoBlack.svg" alt="LMCLUB">
+      </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class = "banner">
+    <!--header -->  
+      <div class = "WenYue">
+        为你量身打造的专属约会
+      </div>
+      <div class="imgButton">
+          <img src ="../../assets/imgs/form_icon_1.svg">
+          <div class="labelDivK">
+              <img src ="../../assets/imgs/Progress_Line.svg">
+              <div class="labelDiv">
+                  <span class="spanLeft">基本资料</span>
+                  <span>个人标签</span>
+                  <span class="spanRight">上传照片</span>
+              </div>
+          </div>
+      </div>
+      <!--form container -->
+        <div class="steps_container">
+          <form action="">
+            <div class="row">
+                <label for="ename">生日</label>
+                <input type="text" id="ename" name="email" placeholder="">
+            </div>
+            <div class="row">
+                <label for="cname">身高</label>
+                <input type="text" id="cname" name="cellphone" placeholder="">
+            </div>
+            <div class="row">
+                <label for="wname">体重</label>
+                <input type="text" id="wname" name="wechat" placeholder="">
+            </div>
+            <div class="row" *ngIf="myNav">
+                <label for="pname">罩杯</label>
+                <input type="text" id="pname" name="password" placeholder="如果是女生">
+            </div>
+            <div class="row">
+                <label for="pname">职业</label>
+                <input type="text" id="pname" name="password" placeholder="">
+            </div>
+            <!--<div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>-->
+
+           
+          </form>
+        </div>
+      <div class="row submitDiv">
+        <a routerLink="/signup3"><input type="submit" value="下一步" ></a>
+        </div>
+  </div>
+</ion-content>

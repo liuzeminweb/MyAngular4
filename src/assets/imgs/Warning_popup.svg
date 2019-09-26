@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="315px" viewBox="0 0 300 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Warning</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lovemaker.io-2.5-Profile1-Warning" transform="translate(-38.000000, -249.000000)">
+            <g id="Warning" transform="translate(38.000000, 249.000000)">
+                <rect id="Message-Background" fill="#FFFFFF" x="0" y="-2.84217094e-14" width="300" height="314" rx="5"></rect>
+                <path d="M0.3,251 L299.7,251" id="Line" stroke="#F1F1F1" stroke-width="0.5" stroke-linecap="square"></path>
+                <path d="M150.4,250.8 L150.4,314.2" id="Line" stroke="#F1F1F1" stroke-width="0.5" stroke-linecap="square"></path>
+                <text id="抱歉！您的会员等级无法查看！" font-family="PingFangSC-Medium, PingFang SC" font-size="25" font-weight="400" line-spacing="28" letter-spacing="-0.200000003" fill="#000000">
+                    <tspan x="39.1" y="71.2">抱歉！您的会员等级</tspan>
+                    <tspan x="88.7" y="99.2">无法查看！</tspan>
+                </text>
+                <text id="您现在的LM会员等级还无法查看该会员的信" font-family="PingFangSC-Medium, PingFang SC" font-size="17" font-weight="400" line-spacing="21" fill="#B3B3B3">
+                    <tspan x="33.6195" y="156">您现在的LM会员等级还无法查</tspan>
+                    <tspan x="29.276" y="177">看该会员的信息，请联系专属客</tspan>
+                    <tspan x="80.276" y="198">服进行会员升级。</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

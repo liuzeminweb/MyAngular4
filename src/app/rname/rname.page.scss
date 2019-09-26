@@ -1,0 +1,186 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+  top:0pt;
+}
+.user-page {
+  background: url("../../assets/imgs/homeBanner.png") no-repeat  top right;
+  background-size: cover;
+  min-height: 100%;
+  background-size: 100% 120%;
+}
+.banner{
+  text-align: center;
+  padding: 1rem;
+}
+.banner h2{
+  font-size: 1.7rem;
+  text-align: left;
+  padding: 0 2.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.bannerImg{
+  height: 15rem;
+  width: 15rem;
+}
+.formDiv{
+  padding:40pt 0;
+}
+.inputDiv{
+  width: 100%;
+  height:40pt;
+  background: #fff;
+  position: relative;
+}
+.buttonBorder{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width:calc(100% - 10pt);
+  border-bottom: 1px solid rgb( 200,199,204)
+}
+.icoDiv{
+  position: absolute;
+  left: 15pt;
+  width: 38pt;
+  height: 38pt;
+  background-size: 1.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.selectDiv{
+  position: absolute;
+  width: 40pt;
+  height: 38pt;
+  line-height: 38pt;
+  left: 55pt;
+  border: 0;
+}
+.selectDiv select{
+  border: 0;
+}
+.inputStyle{
+  position: absolute;
+  right: 0;
+  width:calc(100% - 5pt);
+  height: 38pt;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  padding: 0 10pt;
+  font-family: PingFangSC-Regular;
+  letter-spacing: .6pt;
+  font-size: 11pt;
+}
+.aHrefDiv{
+  padding: 1rem .2rem;
+  color: #000;
+  margin-bottom: 5rem;
+}
+.leftDiv{
+  float: left;
+}
+.rightDiv{
+  float: right;
+}
+.rightDiv a{
+  color: #000;
+  text-decoration: none;
+}
+.buttonDiv{
+  margin: 40pt 6% 0;
+
+}
+.button1{
+  width: 100%;
+  height: 35pt;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  // margin-top: 1.6rem;
+  padding: 0 1rem;
+  background: rgb( 114,102,206);
+  color: #fff;
+  letter-spacing: 0.25rem;
+  //font-weight: 600;
+  font-size: 14pt;
+}
+.tk{
+  margin-top: 1rem;
+  text-align: center;
+  font-size: .8rem;
+}
+.centerDiv{
+  margin-top: 1rem;
+  text-align: center;
+}
+.centerDiv span{
+  cursor: pointer;
+}
+
+.modal-tishi {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  /*display: none;*/
+  .modelDiv {
+    width: 80%;
+    padding: 40pt 3rem;
+    margin: 150pt auto;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .button1 {
+    width: 100%;
+    height: 3.1rem;
+    line-height: 3.1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 1.6rem;
+    padding: 0 1rem;
+    background: #7266ce;
+    color: #fff;
+    /*  letter-spacing: 0.25rem;
+      font-weight: 600;*/
+    font-size: 1.2rem;
+  }
+  .headBt {
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .bodyText {
+    font-family: PingFangSC-Medium;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 0.5pt;
+  }
+  .imgDiv {
+    text-align: center;
+    padding: 3rem 0;
+
+  }
+  .imgDiv img {
+    width: auto;
+    height: 10rem;
+  }
+  .iconWX {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    top: .6rem;
+    background: url("../../assets/imgs/weChatIcon@3x.png") no-repeat center center;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,103 @@
+<header>
+  <ion-toolbar class="head-toorbar">
+      <ion-buttons slot="start">
+      </ion-buttons>
+      <ion-title style=text-align:center routerLink="/home">
+        <img src="../../assets/imgs/LMCLUB_logoBlack.svg" alt="LMCLUB">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/user"><img src="../../assets/imgs/ic_username.svg" alt="user"></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</header>
+
+<ion-content>
+  <div class = "banner">
+    <!--header -->
+      <div class = "WenYue">
+        为你量身打造的专属约会
+      </div>
+      <div class = "home_h2">
+          简单三步，立刻相约
+      </div>
+
+      <!--info table -->
+      <div class = "info_table">
+        <div class = "info_context info_border">我是<a heaf="javascript:;" (click)=" goHome(1)">{{ me }}</a></div>
+        <div class = "info_context">想找<a heaf="javascript:;" (click)=" goHome(2)">{{ Iwant }}</a></div>
+      </div>
+      <!--form container -->
+        <div class="form_container">
+          <form action="" NAME="redirect" VALUE="baseinfo.html">
+            <div class="row">
+                <label for="ename">邮箱</label>
+                <input type="text" id="ename" name="email" placeholder="您将收到验证邮件">
+            </div>
+            <div class="row">
+                <label for="cname">手机号</label>
+                <input type="text" id="cname" name="cellphone" placeholder="用于验证您的身份">
+            </div>
+            <div class="row">
+                <label for="wname">微信号</label>
+                <input type="text" id="wname" name="wechat" placeholder="不要写微信昵称哦">
+            </div>
+            <div class="row">
+                <label for="pname">密码</label>
+                <input type="text" id="pname" name="password" placeholder="">
+            </div>
+            <!--<div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>-->
+
+             <div class="row submitDiv">
+                 <a routerLink="/signup2"><input type="submit" value="马上匹配" ></a>
+            </div>
+
+             <div class="checkBox">
+                 <label (click)="choseMyAgree1()">
+                     <div id="policy" class="input_agreement_protocol" >
+                         <img *ngIf="myAgree1" src="../../assets/imgs/ystk.svg" alt="">
+                         <img *ngIf="!myAgree1" src="../../assets/imgs/ystk_xz.svg" alt="">
+                     </div>
+                     <p class="policy">我同意我的个人资料可以在隐私条款的范围内被使用。我确认我已经年满18岁并已阅读及
+                         同意 LM 的使用条款和隐私政策。<br></p>
+                     <div class="clear"></div>
+                 </label>
+             </div>
+              <div class="clear"></div>
+              <div class="checkBox">
+                  <label (click)="choseMyAgree2()">
+                      <div id="policy2" class="input_agreement_protocol" >
+                          <img *ngIf="myAgree2" src="../../assets/imgs/ystk.svg" alt="">
+                          <img *ngIf="!myAgree2" src="../../assets/imgs/ystk_xz.svg" alt="">
+                      </div>
+                      <p class="policy"> LM将定期通知您所在地区的潜在或新的配对和任何您可能会感兴趣的服务更新。</p>
+                      <div class="clear"></div></label>
+              </div>
+              <div class="clear"></div>
+            <!--
+            <input type="checkbox" id="update" name="feature" style="float:left;"
+               value="update" checked />
+            <label for="update" class ="policy"></label>
+            <p class="policy">LM将定期通知您所在地区的潜在或新的配对和任何您可能会感兴趣的服务更新。</p>-->
+          </form>
+        </div>
+  </div>
+</ion-content>

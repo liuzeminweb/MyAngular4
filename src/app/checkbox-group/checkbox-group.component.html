@@ -1,0 +1,13 @@
+<div class="treeGroup">
+    <div class="zTreeeParent"><input class="marginR1" type="checkbox" (change)="sellectAll()" />
+        <span (click)="ngShowthis()" class="parentSpan">中国 <div class="dropDpwn" [ngClass]="{'dropTop':ngIsShow}"></div></span>
+    </div>
+    <div *ngIf="ngIsShow" class="zTreeeChild">
+        <div class="treeChildbox" *ngFor=" let item of SellectArr ">
+            <label>
+                <input type="checkbox" class="marginR1" value="{{item.value}}"  [(ngModel)]="item.checked" />
+                <span class="childSpan">{{item.value}}</span>
+            </label>
+        </div>
+    </div>
+</div>

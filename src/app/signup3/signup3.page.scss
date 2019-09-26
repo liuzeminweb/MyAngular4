@@ -1,0 +1,447 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+  top: 5pt;
+}
+	.banner {
+      width: 100%;
+      position: relative;
+      padding: 3rem 8.3% 5rem;
+      background: url("../../assets/imgs/homeBanner.png") no-repeat  top right;
+      text-align: center;
+      min-height: 100%;
+      background-size: 100% 95%;
+
+	}
+	.header_style {
+		max-width: 31.25rem;
+		min-width: 31.25rem;
+		position: absolute;
+		z-index: 1;
+	}
+	.WenYue {
+      font-family: WenYue-HouXianDaiTi-NC-W2-75;
+      font-size: 24pt;
+      font-weight: 400;
+      color: #000000;
+      letter-spacing: 1pt;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 2rem;
+	}
+.imgButton{
+  width: 100%;
+  text-align: center;
+}
+
+.labelDivK{
+  width: 100%;
+  margin: 40pt auto 0;
+}
+.labelDivK img{
+  width: 100%;
+}
+.labelDiv{
+  position: relative;
+  width: 110%;
+  left: -5%;
+  text-align: center;
+  font-size: 7pt;
+  color: rgb( 114,102,206);
+}
+.labelDiv .spanLeft{
+  position: absolute;
+  left: -0rem;
+}
+.labelDiv .spanRight{
+  position: absolute;
+  right: 0rem;
+}
+
+	.Heart {
+		margin: 16.83rem 8.5rem;
+
+	}
+
+	.WenYue2 {
+		font-family: WenYue-HouXianDaiTi;
+	  font-size: 2.08rem;
+	  color: #000000;
+	  letter-spacing: 0.28rem;
+	  margin: -13.75rem 2.33rem;
+
+	}
+
+	/* form part */
+	.steps {
+		font-family: PingFangSC-Bold;
+
+	  color: #000000;
+		font-size: 1.78rem;
+		margin: 1.55rem 2.33rem;
+	}
+
+	.Iam {
+		font-family: PingFangSC-Light;
+	  font-size: 1.66rem;
+	  color: #000000;
+	  letter-spacing: 0.15rem;
+	  margin: 1.58rem 2.33rem;
+	}
+
+	.form {
+	  width: 70%;
+	  height: 9rem;
+	  float: left;
+	  margin-top: 12.83rem;
+  }
+  .side {
+	  width: 30%;
+	  height: 9rem;
+	  float: right;
+	  margin-top: 12.83rem;
+
+  }
+
+
+  /* dating style */
+  .DatingStyle {
+	  margin-top: 0rem;
+	  float: left;
+  }
+
+
+  /* fonts style */
+	.home_h {
+		font-family: PingFangSC-Medium;
+
+	  color: #202020;
+		font-size: 1.88rem;
+		letter-spacing: 0.12rem;
+		margin: 3rem 2.33rem;
+	}
+
+	.home_h2 {
+		font-family: PingFangSC-Regular;
+	  font-size: 1.12rem;
+	  color: #000000;
+	  letter-spacing: 0.1rem;
+	  text-align: left;
+	  margin: 2.08rem 2.33rem;
+	}
+
+	.home_p1 {
+		font-family: WenYue-HouXianDaiTi;
+	  font-size: 1.5rem;
+	  color: #202020;
+	  letter-spacing: 0.1rem;
+	  text-align: center;
+	  line-height: 24px;
+	  width: 13.08rem;
+	  height: 4rem;
+	  margin-left: 9.67rem;
+	}
+
+	.home_p2 {
+		font-family: PingFangSC-Regular;
+	  font-size: 1rem;
+	  color: #202020;
+	  letter-spacing: 0.1rem;
+	  text-align: center;
+	  line-height: 24px;
+	  width: 24.58rem;
+	  height: 4.25rem;
+	  margin: 0.83rem 3.33rem;
+	}
+	/* div definition */
+
+
+	.video {
+		height: 29.67rem;
+		width: 100%;
+		position: absolute;
+		margin-top: 59.83rem;
+	}
+
+
+	.dating {
+		height: 101.33rem;
+		width: 100%;
+		position: absolute;
+		margin-top: 89.5rem;
+	}
+
+	.user {
+		height: 29.67rem;
+		width: 100%;
+		position: absolute;
+		margin-top: 190.83rem;
+	}
+	.join {
+		margin-top: 220.5rem;
+		position: absolute;
+
+	}
+
+
+	/* button CSS */
+
+	.buttons {	
+		height: 11rem;
+		width: 100%;	
+		padding-left: 4.92rem;
+		padding-right: 4.92rem;
+
+	}
+
+	.footer_button {
+		width: 90%;
+		background: #7266CE;
+	  border: 1px solid #7266CE;
+	  border-radius: 5px;
+
+	  font-family: PingFangSC-Light;
+	  font-size: 1.5rem;
+	  color: #FFFFFF;
+	  letter-spacing: 1.5rem;
+
+	  margin-top: 1.83rem;
+	}
+
+	.footer_button2 {
+		width: 90%;
+		background: #FFFFFF;
+		border: 1px solid #7266CE;
+	  border-radius: 5px;
+
+	  font-family: PingFangSC-Light;
+	  font-size: 1.5rem;
+	  color: #7266CE;
+	  letter-spacing: 1.5rem;
+
+	  margin-top: 1.83rem;
+	}
+
+	.footer_button:hover {
+		width: 90%;
+		background: #FFFFFF;
+		border: 1px solid #7266CE;
+	  border-radius: 5px;
+
+	  font-family: PingFangSC-Light;
+	  font-size: 1.5rem;
+	  color: #7266CE;
+	  letter-spacing: 1.5rem;
+
+	  margin-top: 1.83rem;
+	}
+
+	#want_button {
+		width:45%;
+		font-size: 16px;
+	}
+
+/*************** form.css ******************/
+.form_h {
+	font-family: WenYue-HouXianDaiTi;
+	font-size: 2.92rem;
+	color: #000000;
+	letter-spacing: 1px;
+	margin: 2.83rem 2.33rem;
+	position: absolute;
+	z-index: 2;
+}
+
+.form_h2 {
+	font-family: PingFangSC-Bold;
+	font-size: 1.88rem;
+	color: #000000;
+
+	margin: 7.5rem 6.67rem;
+}
+
+.info_table {
+	
+	background: #FFFFFF;
+	border: 1px solid #7266CE;
+	border-radius: 5px;
+	width: 26.08rem;
+	height: 8.67rem;
+	margin-left: 2.58rem;
+	margin-top: 6.67rem;
+}
+
+.info_context {
+	font-family: PingFangSC-Light;
+	font-size: 1.5rem;
+	color: #000000;
+	letter-spacing: 0.17rem;
+	padding: 1.25rem 2rem 1.25rem 2rem;
+	width: 26.06rem;
+	height: 4.33rem;
+	text-align: left;
+	position: relative;
+	z-index: 2;
+	}
+
+.info_border {
+	border: 1px solid #7266CE;
+	border-style: hidden hidden solid hidden;
+}
+
+/* form CSS */
+* {
+    box-sizing: border-box;
+}
+.steps_container {
+  font-family: PingFangSC-Light;
+  letter-spacing: 1pt;
+  background: #FFFFFF;
+  border: 1px solid #7266CE;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15pt;
+  padding: 20pt 5.6%;
+  text-align: left;
+}
+.steps_container .row{
+  margin-bottom: 25pt;
+}
+.steps_container .row label{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 2pt;
+  margin-bottom: 5pt;
+}
+.steps_container .row .bqdiv{
+  padding: 0 10pt;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+.submitDiv{
+  margin: 0;
+
+  position: absolute;
+
+  bottom: 0;
+
+  width: 100%;
+
+  left: 0;
+}
+.submitDiv a{
+  display: block;
+  text-decoration: none;
+}
+input[type=submit] {
+  height: 3.27rem;
+  background: #7266CE;
+  border: 1px solid #7266CE;
+  border-radius: 5px;
+  font-family: PingFangSC-Light;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
+  width: 100%;
+  font-style: normal;
+  text-decoration: none;
+  /*  margin:5rem 0 3rem;*/
+}
+
+input[type=submit]:hover {
+  background-color: #FFFFFF;
+  color: #7266CE;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  height: 2.67rem;
+  border: 1px solid #7266CE;
+  border-radius: 5px;
+  opacity: 0.5;
+  font-family: PingFangSC-Light;
+  font-size: 1.2rem;
+  color: #000000;
+  letter-spacing: 0.04rem;
+}
+input[type=text]:focus {
+  border: 2px solid #7266CE;
+}
+
+
+/*policy CSS */
+
+.policy {
+	opacity: 0.6;
+	font-family: PingFangSC-Regular;
+	font-size: 0.67rem;
+	color: #000000;
+	letter-spacing: 0.1rem;
+	text-align: left;
+	line-height: 1rem;
+	margin-top: 0.05rem;
+}
+
+
+
+  .titleH2{
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .bgColor{
+    background: #7266CE;
+    margin: 10px 5px;
+    border-radius: 12px;
+    height: 24px;
+    width: 52px;
+    text-align: center;
+    line-height: 28px;
+    float: left;
+  }
+  .bgColor2{
+    background: #FFFFFF;
+	border: 1px solid #7266CE;
+    margin: 10px 5px;
+    border-radius: 12px;
+    height: 24px;
+    width: 52px;
+    text-align: center;
+    line-height: 28px;
+    float: left;
+  }
+  .borderColor{
+    border: 1px solid #ffd3da;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 28px;
+    line-height: 28px;
+    background: #fff;
+  }
+.textArea{
+  resize:none;
+  width: 100%;
+  height: 60pt;
+  margin-top: 1.2rem;
+  padding: 10px;
+  border: 1px solid #7266CE;
+  border-radius: 3pt;
+  font-size: 8pt;
+  letter-spacing: 0.5pt;
+  opacity: 0.5;
+}

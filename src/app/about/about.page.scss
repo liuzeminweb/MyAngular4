@@ -1,0 +1,46 @@
+.banner{
+  background: url("../../assets/imgs/about1.png") repeat  top right;
+  background-size: cover;
+  text-align: left;
+  padding: 1rem;
+}
+.mainText{
+  padding: 2rem 1rem;
+  font-family: PingFangSC-Regular;
+  font-size: 9pt;
+  line-height: 17pt;
+  letter-spacing: 1.6pt;
+}
+.mainText > p{
+  margin-bottom: 2rem;
+}
+.footer_about{
+  background: rgb( 242,242,242);
+  box-shadow: #f1f1f1 1px -15px 30px 3px;
+  padding: 2rem 2rem 1rem;
+ }
+.btMargin{
+  margin-bottom: 2rem;
+}
+.fontWeight{
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+.footP{
+  padding-top: 3rem;
+}
+.button1{
+  font-family: PingFangSC-Medium;
+  border-radius: 3pt;
+  width: 100%;
+  height: 30pt;
+  border: none;
+  outline: none;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  background: rgb( 255 ,211, 218);
+  color: #000;
+  letter-spacing: 0.85pt;
+  font-weight: 600;
+  font-size: 12pt;
+}

@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title style="text-align:center; ">
+          <div class="backButton" (click)="banckFunction()"><img src="../../assets/imgs/ic_back01.svg" alt=""></div>
+          <img  routerLink="/home" src="../../assets/imgs/LMCLUB_logoBlack.svg" alt="LMCLUB">
+      </ion-title>
+  <ion-buttons slot="end">
+    <ion-button routerLink="/user"><img src="../../assets/imgs/ic_username.svg" alt="user"></ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class = "banner">
+            <!--header -->  
+                <div class = "WenYue">
+                    重塑科学人性化的社交体验
+                </div>
+        <div class="imgButton">
+            <img src ="../../assets/imgs/form_icon_2.svg">
+            <div class="labelDivK">
+                <img src ="../../assets/imgs/Progress_Line2.svg">
+                <div class="labelDiv">
+                    <span class="spanLeft">基本资料</span>
+                    <span>个人标签</span>
+                    <span class="spanRight">上传照片</span>
+                </div>
+            </div>
+        </div>
+                <!--form container -->
+        <div class="steps_container">
+            <div class="row">
+                <label>我是</label>
+                <div class="bqdiv">
+                    <app-mychip *ngFor="let item of iIs" [text]="item.value"  [isOn]="item.isOn"></app-mychip>
+                </div>
+            </div>
+            <div class="row">
+                <label>我喜欢</label>
+                <div class="bqdiv">
+                    <app-mychip *ngFor="let item of iLikechipValue" [text]="item.value"  [isOn]="item.isOn"></app-mychip>
+                </div>
+            </div>
+            <div class="row">
+            <label>我想认识</label>
+            <div class="bqdiv">
+                <app-mychip *ngFor="let item of chipValue" [text]="item.value"  [isOn]="item.isOn"></app-mychip>
+            </div>
+        </div>
+            <div class="row">
+                <label>我想对你说</label>
+                    <textarea class="textArea" placeholder="标签不能完整的定义一个人，所以你可以在这里留下你想要表达的话。"></textarea>
+            </div>
+        </div>
+        <div class="row submitDiv">
+            <a routerLink="/signupPhoto"><input type="submit" value="下一步" ></a>
+        </div>
+    </div>
+
+</ion-content>

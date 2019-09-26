@@ -1,0 +1,192 @@
+<header class="home-head" id="myHeader1">
+  <ion-toolbar class="head-toorbar">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+          <div><img src="../../assets/imgs/ic_cd.svg" alt=""></div>
+      </ion-menu-button>
+   <!--   <ion-button color="secondary" >
+          <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>-->
+    </ion-buttons>
+    <ion-title style=text-align:center routerLink="/home">
+        <img class="logoImg" src="../../assets/imgs/LMCLUB_logoBlack.svg" alt="LMCLUB">
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/user"><img src="../../assets/imgs/ic_username.svg" alt="user"></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</header>
+<ion-content id="tabsubject1">
+  <div class = "lm-home-page" >
+      <div class="bannerDiv">
+          <h2>为你量身打造的专属约会</h2>
+          <img class="bannerImg" src="../../assets/imgs/user3D.png" alt="">
+          <p>是有趣的灵魂还是好看的皮囊只要你遇见…</p>
+          <div class="bgDiv2"></div>
+      </div>
+      <h3 class="JD3b">简单三步，立刻相约</h3>
+    <div class="span" *ngIf="ngIsShowOneDIV">
+      <h4>我是...</h4>
+      <div class="buttonDiv">
+          <button class="button" expand="block" color="tertiary" (click)="showMen()" >男生</button>
+          <button class="button" expand="block" color="tertiary" (click)="showWomen()">女生</button>
+      </div>
+    </div>
+    <div class="span" *ngIf="ngIsShowTowDIV">
+      <h4>我是{{ me}}, 我想找...</h4>
+        <div class="buttonDiv buttonDiv2">
+            <button class="button1" expand="block" color="tertiary" (click)="goSignup('长期恋爱')" >长期恋爱</button>
+            <button class="button2" expand="block" color="tertiary" (click)="goSignup('短期交往')">短期交往</button>
+            <button class="button1" expand="block" color="tertiary" (click)="goSignup('旅行伴侣')">旅行伴侣</button>
+            <button class="button2" expand="block" color="tertiary" (click)="goSignup('寻求刺激')">寻求刺激</button>
+        </div>
+    <!--  <ion-button  color="tertiary" fill routerLink="/signup">长期恋爱</ion-button>
+      <ion-button  color="tertiary" routerLink="/signup">短期交往</ion-button>
+      <ion-button  color="tertiary" fill routerLink="/signup">旅行伴侣</ion-button>
+      <ion-button  color="tertiary" fill routerLink="/signup">寻求刺激</ion-button>-->
+    </div>
+    
+  </div>
+  <!--
+  <div class="video">
+    <div class = "home_h">LM旅趴视频</div>
+    <div class = "home_h2">遍布世界各地的独家Party视频</div>
+    <div class = "video_swiper"></div>
+  </div>-->
+  <div class="content-div">
+      <h2>LM旅趴视频</h2>
+      <p class="message">遍布世界各地的独家Party视频</p>
+      <div class="bannerVideoDiv">
+          <div class = "video_swiper">
+              <ul [ngStyle]="leftPositionXNuber ">
+                  <li>
+                      <img src="../../assets/imgs/bld6year.png" alt="">
+                      <p>巴厘岛六周年</p>
+                  </li>
+                  <li>
+                      <img src="../../assets/imgs/smd5year.png" alt="">
+                      <p>苏梅岛五周年</p>
+                  </li>
+                  <li>
+                      <img src="../../assets/imgs/year5.png" alt="">
+                      <p>五周年活动</p>
+                  </li>
+                  <li>
+                      <img src="../../assets/imgs/dluhz.png" alt="">
+                      <p>多伦多聚会</p>
+                  </li>
+
+              </ul>
+              <div class="clear"></div>
+          </div>
+          <div class="BnnerleftButton" (click)="leftPosition($event)" ></div>
+          <div class="BnnerrightButton" (click)="rightPosition($event)"></div>
+      </div>
+  </div>
+    <div class="content-div">
+        <h2>LM订制约会</h2>
+    </div>
+    <div class= "datingDiv">
+        <ul>
+            <li>
+                <div class="liDiv">
+                    <img src="../../assets/imgs/feature1Icon@3x.png" alt="">
+                    <div class="liTitle">会员专属的私人订制<br>量身打造的约会</div>
+                    <div class="liP">约会关系可以从友谊开始，没有牵绊；LMClub的约会管家会每周每月定期推荐最新优质会员，随时随地安排约会。</div>
+                </div>
+                <div class="backgroundDiv"><img src="../../assets/imgs/shapes@3x.png" alt=""></div>
+            </li>
+            <li>
+                <div class="liDiv">
+                    <img src="../../assets/imgs/feature2Icon@3x.png" alt="">
+                    <div class="liTitle">严密审核的入会机制<br>用户隐私全权保密</div>
+                    <div class="liP">不同于无门槛无审核的社交平台，LM人工精选每一名会员，拒绝门槛低下者入会；提供反馈评价机制给会员打分排名，每次约会都是未知与惊喜。</div>
+                </div>
+                <div class="backgroundDiv"><img src="../../assets/imgs/shapes@3x.png" alt=""></div>
+            </li>
+            <li>
+                <div class="liDiv">
+                    <img src="../../assets/imgs/feature3Icon@3x.png" alt="">
+                    <div class="liTitle">每时每刻极致人工服务<br>精彩活动遍及全球</div>
+                    <div class="liP">全球客服24/7一对一人工服务，VIP 会员更有机会加入我们定期举办的邀请制线下旅趴；心动女神男神零距离。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--
+    <div class= "user">
+      <div class = "home_h">会员们说</div>
+      <div class = "home_h2">来自LM会员们真实的声音</div>
+      <div class = "video_swiper"></div>
+    </div>-->
+    <div  class="content-div">
+        <h2>会员们说</h2>
+        <p class="message">来自LM会员们真实的声音</p>
+        <div class="bannerVideoDiv">
+            <div class = "video_swiper">
+                <ul [ngStyle]="leftPositionXNuber ">
+                    <li>
+                        <img src="../../assets/imgs/year5FT.png" alt="">
+                        <p>五周年采访视频 vol.1</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/imgs/year5.png" alt="">
+                        <p>五周年采访视频 vol.2</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/imgs/smd5year.png" alt="">
+                        <p>六周年采访视频 vol.1</p>
+                    </li>
+                    <li>
+                        <img src="../../assets/imgs/dluhz.png" alt="">
+                        <p>六周年采访视频 vol.2</p>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="BnnerleftButton" (click)="leftPosition($event)" ></div>
+            <div class="BnnerrightButton" (click)="rightPosition($event)"></div>
+        </div>
+        <h2>媒体报道</h2>
+        <div style=text-align:center>
+            <!-- <ion-button routerLink=""><img src="../../assets/imgs/collegedaily.svg" alt="user"></ion-button> -->
+           <div class="mtImg">
+               <ul>
+                   <li><img src="../../assets/imgs/xllogo.png" alt="sina"></li>
+                   <li><img src="../../assets/imgs/zhlogo.png" alt="zhihu"></li>
+                   <li><img src="../../assets/imgs/wylogo.png" style="height: 30pt" alt="netease"></li>
+                   <li><img src="../../assets/imgs/Vicelogo.png" alt="viceChina"></li>
+                   <li><img src="../../assets/imgs/lxslogo.png" style="height: 80pt" alt="collegedaily"></li>
+               </ul>
+           </div>
+            <!--button for login & singup-->
+            <div class="btnLinkDiv">
+                <button class="btnLink" routerLink="/user" expand="block" color="tertiary">会员登录</button>
+                <button class="btnLink" routerLink="/signup" expand="block" color="tertiary">申请入会</button>
+            </div>
+
+            <!-- social media -->
+            <div class="social_media">
+                <ul>
+                    <li><a href="https://www.facebook.com/LM-CLUB-1413356455353537/"><img id="social-tw" class= "social" src="../../assets/imgs/social-wbicon.svg"></a>
+                    <li><a href="https://www.instagram.com/lm.club"><img id="social-it" class= "social" src="../../assets/imgs/social-facebook.svg"></a>
+                    <li><a href="https://www.linkedin.com/company/elitely/"><img id="social-li" class= "social" src="../../assets/imgs/social-instagram.svg"></a>
+                    <li><a href="#"><img id="social-yt" class= "social" src="../../assets/imgs/social icon Youtube.svg"></a></li>
+                </ul>
+            </div>
+            <div class="bottom-div">
+                <p>免责声明</p>
+                <p>用户协议</p>
+                <p>关于隐私</p>
+                <p>常见问题</p>
+                <p>关于LM</p>
+                <p>加入我们</p>
+                <p>联系我们</p>
+                <p>京ICP备170025038号-1</p>
+                <p>COPYRIGHT @ 2012 - 2018</p>
+                <p>ALL Rights Reserved</p>
+            </div>
+
+        </div>
+    </div>
+</ion-content>

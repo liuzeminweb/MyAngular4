@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="17px" viewBox="0 0 66 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Matching Percetage</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="47.0472956%" x2="95.5078125%" y2="47.0472956%" id="linearGradient-1">
+            <stop stop-color="#4E60D3" offset="0%"></stop>
+            <stop stop-color="#913BAF" offset="14.2763214%"></stop>
+            <stop stop-color="#D52D88" offset="76.145798%"></stop>
+            <stop stop-color="#F26D4F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="io-2.5-User-Flow-Version" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lovemaker.io-2.5-Profile1" transform="translate(-276.000000, -203.000000)">
+            <g id="Matching-Percetage" transform="translate(276.000000, 203.000000)">
+                <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="66" height="17" rx="3"></rect>
+                <text id="查看匹配度" font-family="PingFangSC-Medium, PingFang SC" font-size="12" font-weight="400" letter-spacing="-0.152" fill="#FFFFFF">
+                    <tspan x="3" y="13">查看匹配度</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

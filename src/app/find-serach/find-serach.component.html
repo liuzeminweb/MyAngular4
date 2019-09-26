@@ -1,0 +1,40 @@
+<div class="serachDiv" [ngStyle] ="myStyle">
+    <span (click)="ngShow()"  class="huiyuuan">会员筛选 <div class="dropDpwn" [ngClass]="{'dropTop':ngIsShow}"></div></span>
+    <div *ngIf="ngIsShow">
+        <div class="serachK">
+            <input type="search" class="serachInput" placeholder="按会员编号查找" value="按会员编号查找">
+            <span class="serachButton"></span>
+        </div>
+        <div class="sxDivK" [ngClass]="{'sxDivKShow':ngIsShowSX}">
+            <div class="sxDiv" (click)="ngShowSX()">地区 <div class="dropDpwn" [ngClass]="{'dropTop':ngIsShowSX}"></div></div>
+        </div>
+        <div class="pxDivK">
+            <div class="pxDiv" (click)="ngShowPX()">排序  <div class="dropDpwn" [ngClass]="{'dropTop':ngIsShowPX}"></div></div>
+            <div  *ngIf="ngIsShowPX" class="pxK">
+                <div class="selectLi" (click)="selectedFunction($event)"><span class="selectSpan on"></span>全部</div>
+                <div class="selectLi" (click)="selectedFunction($event)"><span class="selectSpan "></span>最匹配</div>
+                <div class="selectLi" (click)="selectedFunction($event)"><span class="selectSpan "></span>新入会</div>
+                <div class="selectLi" (click)="selectedFunction($event)"><span class="selectSpan "></span>最活跃</div>
+                <div class="selectLi" (click)="selectedFunction($event)"><span class="selectSpan "></span>最受欢迎</div>
+                <div class="selectLi" (click)="selectedFunction($event)"><span class="selectSpan "></span>最高等级会员</div>
+            </div>
+        </div>
+        <div *ngIf="ngIsShowSX" class="sxK">
+            <!--<div class="dq" (click)="ngShowDQ()">地区 <div class="dropDpwn" [ngClass]="{'dropTop':ngIsShowDQ}"></div></div>
+            <div class="dqK" *ngIf="ngIsShowDQ">
+                <app-checkbox-group></app-checkbox-group>
+                <app-checkbox-group></app-checkbox-group>
+                <app-checkbox-group></app-checkbox-group>
+            </div>-->
+            <app-checkbox-group></app-checkbox-group>
+            <app-checkbox-group></app-checkbox-group>
+            <app-checkbox-group></app-checkbox-group>
+            <div class="btnDiv">
+                <button class="submitButton">确认</button>
+                <br/>
+                <button class="clearButton">清除</button>
+            </div>
+        </div>
+
+    </div>
+</div>

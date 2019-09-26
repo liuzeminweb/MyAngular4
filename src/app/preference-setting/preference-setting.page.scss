@@ -1,0 +1,199 @@
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+}
+.backButton{
+  margin-left: 10pt;
+  width: 20pt;
+  height: 20pt;
+  z-index: 99;
+  position: absolute;
+}
+.lm-baseinfo-settings-page {
+  background-color: rgb( 242 ,242 ,242);
+  font-family: PingFangSC-Regular;
+}
+.titleh2{
+  margin: 0;
+  background-color: rgb( 242 ,242 ,242);
+  padding: 50pt 7pt 10pt;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: rgb( 137 ,137 ,137);
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+}
+.imgDiv{
+  height: 89px;
+  width: 89px;
+  padding: 3px;
+  border: 1px solid rgb(254,96,96);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20pt;
+  position: relative;
+}
+.touxImgDiv{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sjButton{
+  background: #fff;
+  color: rgb( 239, 80, 105);
+  height: 30pt;
+  line-height: 30pt;
+  margin-top: 25pt;
+  font-family: PingFangSC-Semibold;
+  font-size: 12pt;
+  font-weight: 600;
+  border-top: 1px solid rgb( 200 ,199 ,204);
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+}
+.sjButton span{
+  display: block;
+  width: 100%;
+}
+.sjjjText{
+  text-align: left;
+  font-size: 12px;
+  padding: 5pt 10pt;
+  font-family: PingFangSC-Regular;
+  color: rgb( 184 ,184 ,186);
+}
+.divKuang{
+  margin-bottom: 30pt;
+  border-top: 1px solid rgb( 200 ,199 ,204);
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+  background: #fff;
+}
+.syfpNumber{
+  margin-top: 50pt;
+}
+.myListrow{
+  height: 30pt;
+  line-height: 30pt;
+  background: #fff;
+}
+.itemLeft{
+  float: left;
+  padding-left: 1rem;
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: .75pt;
+  font-family: PingFangSC-Regular;
+}
+.itemRight{
+  float: right;
+  font-size: 10pt;
+  letter-spacing: 0.4pt;
+  padding-right: 5pt;
+  color: rgb( 137, 137, 137);
+}
+.bottomBorder{
+  height: 0px;
+  margin-left: 1rem;
+  border-bottom: 1px solid rgb( 200 ,199 ,204);
+}
+.ycRight{
+  width: 50pt;
+  height: 100%;
+  position: relative;
+}
+.divPosition{
+  position: relative;
+  top: 4px;
+}
+.buttonSure{
+  padding: 30pt 5% 0;
+}
+.buttonSure .sureButton{
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  border: 0;
+  border-radius: 5pt;
+  font-size: 18px;
+  font-family: PingFangSC-Medium;
+  letter-spacing: 0.5pt;
+  font-weight: 600;
+  background: rgb( 255, 211, 218);
+}
+.hqyzm{
+  background: rgb( 239, 80 ,105);
+  color: #fff;
+  // width: 65pt;
+  height: 16pt;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  margin-top: 5pt;
+  margin-left: 5pt;
+  padding: 0 3pt;
+  letter-spacing: 0.25pt;
+  font-size: 10pt;
+  // position: absolute;
+  right: 5pt;
+}
+.clear{
+  clear: both;
+}
+.borderColor{
+  border: 1px solid #ffd3da;
+  margin-right: 10px;
+  border-radius: 10px;
+  height: 28px;
+  line-height: 28px;
+  background: #fff;
+}
+.bgColor1{
+  background: #FFFFFF;
+  border: 1px solid #ffd3da;
+  margin: 10px 5px;
+  border-radius: 12px;
+  height: 24px;
+  width: 52px;
+  text-align: center;
+  line-height: 28px;
+  float: left;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+}
+.bgColor1.classOn{
+  background: #ffd3da;
+  color: #000;
+}
+.addMyChip{
+  width: 40pt;
+  height: 30pt;
+  line-height: 30pt;
+  float: left;
+  margin-left: 10pt;
+  color: rgb( 184 ,184 ,186);
+  font-size: 16pt;
+}
+.myChipK{
+  padding: 10px 40px;
+}
+.myTextK{
+  padding: 0;
+}
+.textArea{
+  resize: none;
+  width: 100%;
+  height: 80px;
+  padding: 20px 15px;
+  border: 1px;
+  line-height: 20px;
+  border-radius: 3pt;
+  font-size: 15px;
+}
+.textArea::-webkit-input-placeholder {
+   color: rgb(184 ,184 ,186);
+   font-size: 15px;
+  }
